@@ -1,0 +1,13 @@
+Two graphs are isomorphic if there is a way to rename the vertices of one to make it identical to the other. Draw all the non isomorphic graphs with two, three, four, and five vertices.
+
+ANS)
+
+Suppose we have two graphs. In the first graph there are v1
+vertices and e1 edges. In the second graph there are v2 vertices
+and e2 edges. Then in order for the two graphs to be isomorphic
+we must have:
+v1 = v2
+e1 = e2
+In words, isomorphic graphs must have the same number of
+vertices and edges.
+
