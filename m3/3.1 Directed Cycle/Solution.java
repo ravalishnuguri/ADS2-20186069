@@ -30,7 +30,7 @@ class Digraph {
      * @param  V the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(final int V) {
+    Digraph(final int V) {
         if (V < 0) {
             throw new IllegalArgumentException("Number.");
         }
@@ -43,7 +43,7 @@ class Digraph {
         }
     }
 
-    /**  
+    /**
      * Initializes a digraph from the specified input stream.
      * The format is the number of vertices <em>V</em>,
      * followed by the number of edges <em>E</em>,
@@ -53,7 +53,7 @@ class Digraph {
      * @throws IllegalArgumentException if the number of vertices or edges.
      * @throws IllegalArgumentException if the input stream is in the wrong.
      */
-    public Digraph(final Scanner in) {
+    Digraph(final Scanner in) {
         try {
             this.V = Integer.parseInt(in.nextLine());
             if (V < 0) {
@@ -65,7 +65,9 @@ class Digraph {
                 adj[v] = new Bag<Integer>();
             }
             int E = Integer.parseInt(in.nextLine());
-            if (E < 0) throw new IllegalArgumentException("number of");
+            if (E < 0) {
+                throw new IllegalArgumentException("number of");
+            }
             for (int i = 0; i < E; i++) {
                 String[] inputs = in.nextLine().split(" ");
                 int v = Integer.parseInt(inputs[0]);
@@ -80,7 +82,7 @@ class Digraph {
     /**
      * Initializes a new digraph that is a deep copy of the specified digraph.
      *
-     * @param  G the digraph to copy
+     * @param  g the digraph to copy
      */
     Digraph(final Digraph g) {
         this(g.vertice());
