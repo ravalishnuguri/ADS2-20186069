@@ -30,15 +30,15 @@ class Digraph {
      * @param  ve the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    Digraph(final int ve) {
-        if (ve < 0) {
+    Digraph(final int ver) {
+        if (ver < 0) {
             throw new IllegalArgumentException("Number.");
         }
-        this.ve = ve;
+        this.ve = ver;
         this.ed = 0;
-        indegree = new int[ve];
-        adj = (Bag<Integer>[]) new Bag[ve];
-        for (int v = 0; v < ve; v++) {
+        indegree = new int[ver];
+        adj = (Bag<Integer>[]) new Bag[ver];
+        for (int v = 0; v < ver; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -64,11 +64,11 @@ class Digraph {
             for (int v = 0; v < ve; v++) {
                 adj[v] = new Bag<Integer>();
             }
-            int ed = Integer.parseInt(in.nextLine());
-            if (ed < 0) {
+            int ed1 = Integer.parseInt(in.nextLine());
+            if (ed1 < 0) {
                 throw new IllegalArgumentException("number of");
             }
-            for (int i = 0; i < ed; i++) {
+            for (int i = 0; i < ed1; i++) {
                 String[] inputs = in.nextLine().split(" ");
                 int v = Integer.parseInt(inputs[0]);
                 int w = Integer.parseInt(inputs[1]);
