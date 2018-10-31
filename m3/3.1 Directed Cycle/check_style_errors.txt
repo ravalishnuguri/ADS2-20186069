@@ -4,15 +4,11 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:14:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:18:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:33:23: 'V' hides a field. [HiddenField]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:33:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:67:17: 'E' hides a field. [HiddenField]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:67:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:33:23: 've' hides a field. [HiddenField]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:67:17: 'ed' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:135:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.

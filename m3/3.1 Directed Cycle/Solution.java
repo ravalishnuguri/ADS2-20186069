@@ -11,11 +11,11 @@ class Digraph {
     /**
      * variable V.
      */
-    private final int V;
+    private final int ve;
     /**
      * variabel e.
      */
-    private int E;
+    private int ed;
     /**
      * variable bag.
      */
@@ -27,18 +27,18 @@ class Digraph {
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param  V the number of vertices
+     * @param  ve the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    Digraph(final int V) {
-        if (V < 0) {
+    Digraph(final int ve) {
+        if (ve < 0) {
             throw new IllegalArgumentException("Number.");
         }
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        this.ve = ve;
+        this.ed = 0;
+        indegree = new int[ve];
+        adj = (Bag<Integer>[]) new Bag[ve];
+        for (int v = 0; v < ve; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -55,20 +55,20 @@ class Digraph {
      */
     Digraph(final Scanner in) {
         try {
-            this.V = Integer.parseInt(in.nextLine());
-            if (V < 0) {
+            this.ve = Integer.parseInt(in.nextLine());
+            if (ve < 0) {
                 throw new IllegalArgumentException("number of.");
             }
-            indegree = new int[V];
-            adj = (Bag<Integer>[]) new Bag[V];
-            for (int v = 0; v < V; v++) {
+            indegree = new int[ve];
+            adj = (Bag<Integer>[]) new Bag[ve];
+            for (int v = 0; v < ve; v++) {
                 adj[v] = new Bag<Integer>();
             }
-            int E = Integer.parseInt(in.nextLine());
-            if (E < 0) {
+            int ed = Integer.parseInt(in.nextLine());
+            if (ed < 0) {
                 throw new IllegalArgumentException("number of");
             }
-            for (int i = 0; i < E; i++) {
+            for (int i = 0; i < ed; i++) {
                 String[] inputs = in.nextLine().split(" ");
                 int v = Integer.parseInt(inputs[0]);
                 int w = Integer.parseInt(inputs[1]);
@@ -86,8 +86,8 @@ class Digraph {
      */
     Digraph(final Digraph g) {
         this(g.vertice());
-        this.E = g.edge();
-        for (int v = 0; v < V; v++) {
+        this.ed = g.edge();
+        for (int v = 0; v < ve; v++) {
             this.indegree[v] = g.indegree(v);
         }
         for (int v = 0; v < g.vertice(); v++) {
@@ -107,7 +107,7 @@ class Digraph {
      * @return the number of vertices in this digraph
      */
     public int vertice() {
-        return V;
+        return ve;
     }
 
     /**
@@ -116,7 +116,7 @@ class Digraph {
      * @return the number of edges in this digraph
      */
     public int edge() {
-        return E;
+        return ed;
     }
     /**
      * method to validate vertex.
@@ -124,7 +124,7 @@ class Digraph {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= V) {
+        if (v < 0 || v >= ve) {
             throw new IllegalArgumentException("verte");
         }
     }
@@ -141,7 +141,7 @@ class Digraph {
         validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        ed++;
     }
 
     /**
@@ -188,8 +188,8 @@ class Digraph {
      * @return the reverse of the digraph
      */
     public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
+        Digraph reverse = new Digraph(ve);
+        for (int v = 0; v < ve; v++) {
             for (int w : adj(v)) {
                 reverse.addEdge(w, v);
             }
@@ -205,8 +205,8 @@ class Digraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
+        s.append(ve + " vertices, " + ed + " edges " + NEWLINE);
+        for (int v = 0; v < ve; v++) {
             s.append(String.format("%d: ", v));
             for (int w : adj[v]) {
                 s.append(String.format("%d ", w));
