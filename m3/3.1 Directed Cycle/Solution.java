@@ -27,7 +27,7 @@ class Digraph {
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param  ve the number of vertices
+     * @param  ver the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     Digraph(final int ver) {
