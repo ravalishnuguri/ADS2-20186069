@@ -193,9 +193,20 @@ class Digraph {
         return s.toString();
     }
 }
-public class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() { }
-    public static void main(String[] args) {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner in = new Scanner(System.in);
         Digraph dg = new Digraph(in);
         // System.out.println(dg);
