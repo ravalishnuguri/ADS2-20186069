@@ -30,6 +30,32 @@ Starting audit...
 Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:5: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:12:26: Parameter G should be final. [FinalParameters]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:12:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:16: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:17: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:20: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:21:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:21:22: Parameter G should be final. [FinalParameters]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:21:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:21:33: Parameter v should be final. [FinalParameters]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:27: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:33:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:51: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:58: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:59: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:68:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:74: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:78: Line is longer than 80 characters (found 90). [LineLength]
+Audit done.
+Checkstyle ends with 23 errors.
+Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:4:5: Missing a Javadoc comment. [JavadocVariable]
