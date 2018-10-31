@@ -38,14 +38,14 @@ class Digraph {
      */
     public Digraph(Scanner in) {
         try {
-            this.V = in.nextInt();
+            this.V = Integer.parseInt(in.nextLine());
             if (V < 0) throw new IllegalArgumentException("number of vertices in a Digraph must be nonnegative");
             indegree = new int[V];
             adj = (Bag<Integer>[]) new Bag[V];
             for (int v = 0; v < V; v++) {
                 adj[v] = new Bag<Integer>();
             }
-            int E = in.nextInt();
+            int E = Integer.parseInt(in.nextLine());
             if (E < 0) throw new IllegalArgumentException("number of edges in a Digraph must be nonnegative");
             for (int i = 0; i < E; i++) {
                 String[] inputs = in.nextLine().split(" ");

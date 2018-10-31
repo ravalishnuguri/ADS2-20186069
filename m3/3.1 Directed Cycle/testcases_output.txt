@@ -3,12 +3,20 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Digraph.<init>(Solution.java:52)
-	at Solution.main(Solution.java:200)
+13 vertices, 15 edges 
+0: 5 1 6 
+1: 
+2: 0 3 
+3: 5 
+4: 
+5: 4 
+6: 9 4 
+7: 6 
+8: 7 
+9: 11 10 12 
+10: 
+11: 12 
+12:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -16,12 +24,20 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Digraph.<init>(Solution.java:52)
-	at Solution.main(Solution.java:200)
+13 vertices, 15 edges 
+0: 5 1 6 
+1: 
+2: 0 3 
+3: 5 
+4: 
+5: 4 
+6: 9 4 
+7: 6 
+8: 7 
+9: 11 10 12 
+10: 
+11: 12 
+12:
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -29,12 +45,20 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Digraph.<init>(Solution.java:52)
-	at Solution.main(Solution.java:200)
+13 vertices, 22 edges 
+0: 5 1 
+1: 
+2: 0 3 
+3: 5 2 
+4: 3 2 
+5: 4 
+6: 9 4 8 0 
+7: 6 9 
+8: 6 
+9: 11 10 
+10: 12 
+11: 4 12 
+12: 9
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -42,12 +66,8 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Digraph.<init>(Solution.java:52)
-	at Solution.main(Solution.java:200)
+1 vertices, 1 edges 
+0: 0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -55,12 +75,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Digraph.<init>(Solution.java:52)
-	at Solution.main(Solution.java:200)
+4 vertices, 6 edges 
+0: 2 1 
+1: 2 
+2: 3 0 
+3: 3
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -68,12 +87,20 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Digraph.<init>(Solution.java:52)
-	at Solution.main(Solution.java:200)
+13 vertices, 22 edges 
+0: 5 1 
+1: 
+2: 0 3 
+3: 5 2 
+4: 3 2 
+5: 4 
+6: 9 4 8 0 
+7: 6 9 
+8: 6 
+9: 11 10 
+10: 12 
+11: 4 12 
+12: 9
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -81,12 +108,10 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Digraph.<init>(Solution.java:52)
-	at Solution.main(Solution.java:200)
+3 vertices, 3 edges 
+0: 1 
+1: 2 2 
+2:
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -94,11 +119,9 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Digraph.<init>(Solution.java:52)
-	at Solution.main(Solution.java:200)
+3 vertices, 3 edges 
+0: 1 
+1: 2 
+2: 1
 ----------------------------------------
 
