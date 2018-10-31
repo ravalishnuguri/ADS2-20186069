@@ -154,132 +154,171 @@ class Graph {
 
 }
 
-
-class Cycle {
+class Bipartite {
+    private boolean isBipartite;
+    private boolean[] color;
     private boolean[] marked;
     private int[] edgeTo;
     private Stack<Integer> cycle;
+
     /**
-     * Determines whether the undirected graph {@code G} has a cycle and,
-     * if so, finds such a cycle.
+     * Determines whether an undirected graph is bipartite and finds either a
+     * bipartition or an odd-length cycle.
      *
-     * @param G the undirected graph
+     * @param  G the graph
      */
-    public Cycle(Graph G) {
-        if (hasSelfLoop(G)) return;
-        if (hasParallelEdges(G)) return;
+    public Bipartite(Graph G) {
+        isBipartite = true;
+        color  = new boolean[G.V()];
         marked = new boolean[G.V()];
         edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            if (!marked[v])
-                dfs(G, -1, v);
-    }
-
-
-    // does this graph have a self loop?
-    // side effect: initialize cycle to be self loop
-    private boolean hasSelfLoop(Graph G) {
-        for (int v = 0; v < G.V(); v++) {
-            for (int w : G.adj(v)) {
-                if (v == w) {
-                    cycle = new Stack<Integer>();
-                    cycle.push(v);
-                    cycle.push(v);
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    // does this graph have two parallel edges?
-    // side effect: initialize cycle to be two parallel edges
-    private boolean hasParallelEdges(Graph G) {
-        marked = new boolean[G.V()];
 
         for (int v = 0; v < G.V(); v++) {
-
-            // check for parallel edges incident to v
-            for (int w : G.adj(v)) {
-                if (marked[w]) {
-                    cycle = new Stack<Integer>();
-                    cycle.push(v);
-                    cycle.push(w);
-                    cycle.push(v);
-                    return true;
-                }
-                marked[w] = true;
-            }
-
-            // reset so marked[v] = false for all v
-            for (int w : G.adj(v)) {
-                marked[w] = false;
+            if (!marked[v]) {
+                dfs(G, v);
             }
         }
-        return false;
+        assert check(G);
     }
 
-    /**
-     * Returns true if the graph {@code G} has a cycle.
-     *
-     * @return {@code true} if the graph has a cycle; {@code false} otherwise
-     */
-    public boolean hasCycle() {
-        return cycle != null;
-    }
-
-     /**
-     * Returns a cycle in the graph {@code G}.
-     * @return a cycle if the graph {@code G} has a cycle,
-     *         and {@code null} otherwise
-     */
-    public Iterable<Integer> cycle() {
-        return cycle;
-    }
-
-    private void dfs(Graph G, int u, int v) {
+    private void dfs(Graph G, int v) { 
         marked[v] = true;
         for (int w : G.adj(v)) {
 
-            // short circuit if cycle already found
+            // short circuit if odd-length cycle found
             if (cycle != null) return;
 
+            // found uncolored vertex, so recur
             if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, v, w);
-            }
+                color[w] = !color[v];
+                dfs(G, w);
+            } 
 
-            // check for cycle (but disregard reverse of edge leading to v)
-            else if (w != u) {
+            // if v-w create an odd-length cycle, find it
+            else if (color[w] == color[v]) {
+                isBipartite = false;
                 cycle = new Stack<Integer>();
+                cycle.push(w);  // don't need this unless you want to include start vertex twice
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
                 }
                 cycle.push(w);
-                cycle.push(v);
             }
         }
     }
 
     /**
-     * Unit tests the {@code Cycle} data type.
+     * Returns true if the graph is bipartite.
+     *
+     * @return {@code true} if the graph is bipartite; {@code false} otherwise
+     */
+    public boolean isBipartite() {
+        return isBipartite;
+    }
+ 
+    /**
+     * Returns the side of the bipartite that vertex {@code v} is on.
+     *
+     * @param  v the vertex
+     * @return the side of the bipartition that vertex {@code v} is on; two vertices
+     *         are in the same side of the bipartition if and only if they have the
+     *         same color
+     * @throws IllegalArgumentException unless {@code 0 <= v < V} 
+     * @throws UnsupportedOperationException if this method is called when the graph
+     *         is not bipartite
+     */
+    public boolean color(int v) {
+        validateVertex(v);
+        if (!isBipartite)
+            throw new UnsupportedOperationException("graph is not bipartite");
+        return color[v];
+    }
+
+    /**
+     * Returns an odd-length cycle if the graph is not bipartite, and
+     * {@code null} otherwise.
+     *
+     * @return an odd-length cycle if the graph is not bipartite
+     *         (and hence has an odd-length cycle), and {@code null}
+     *         otherwise
+     */
+    public Iterable<Integer> oddCycle() {
+        return cycle; 
+    }
+
+    private boolean check(Graph G) {
+        // graph is bipartite
+        if (isBipartite) {
+            for (int v = 0; v < G.V(); v++) {
+                for (int w : G.adj(v)) {
+                    if (color[v] == color[w]) {
+                        System.err.printf("edge %d-%d with %d and %d in same side of bipartition\n", v, w, v, w);
+                        return false;
+                    }
+                }
+            }
+        }
+
+        // graph has an odd-length cycle
+        else {
+            // verify cycle
+            int first = -1, last = -1;
+            for (int v : oddCycle()) {
+                if (first == -1) first = v;
+                last = v;
+            }
+            if (first != last) {
+                System.err.printf("cycle begins with %d and ends with %d\n", first, last);
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    private void validateVertex(int v) {
+        int V = marked.length;
+        if (v < 0 || v >= V)
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+    }
+
+    /**
+     * Unit tests the {@code Bipartite} data type.
      *
      * @param args the command-line arguments
      */
     // public static void main(String[] args) {
-    //     In in = new In(args[0]);
-    //     Graph G = new Graph(in);
-    //     Cycle finder = new Cycle(G);
-    //     if (finder.hasCycle()) {
-    //         for (int v : finder.cycle()) {
-    //             StdOut.print(v + " ");
+    //     int V1 = Integer.parseInt(args[0]);
+    //     int V2 = Integer.parseInt(args[1]);
+    //     int E  = Integer.parseInt(args[2]);
+    //     int F  = Integer.parseInt(args[3]);
+
+    //     // create random bipartite graph with V1 vertices on left side,
+    //     // V2 vertices on right side, and E edges; then add F random edges
+    //     Graph G = GraphGenerator.bipartite(V1, V2, E);
+    //     for (int i = 0; i < F; i++) {
+    //         int v = StdRandom.uniform(V1 + V2);
+    //         int w = StdRandom.uniform(V1 + V2);
+    //         G.addEdge(v, w);
+    //     }
+    //     System.out.println();
+
+
+    //     Bipartite b = new Bipartite(G);
+    //     if (b.isBipartite()) {
+    //         StdOut.println("Graph is bipartite");
+    //         for (int v = 0; v < G.V(); v++) {
+    //             StdOut.println(v + ": " + b.color(v));
     //         }
-    //         StdOut.println();
     //     }
     //     else {
-    //         StdOut.println("Graph is acyclic");
+    //         StdOut.print("Graph has an odd-length cycle: ");
+    //         for (int x : b.oddCycle()) {
+    //             StdOut.print(x + " ");
+    //         }
+    //         System.out.println();
     //     }
     // }
-
-
 }

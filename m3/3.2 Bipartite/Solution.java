@@ -12,12 +12,11 @@ class Solution {
             int w = Integer.parseInt(inputs[1]);
 			gp.addEdge(v, w);
 		}
-		Cycle finder = new Cycle(gp);
-		if (finder.hasCycle()) {
-            for (int v : finder.cycle()) {
-               System.out.println(v + " ");
-            }
-            System.out.println();
+		Bipartite b = new Bipartite(gp);
+        if (b.isBipartite()) {
+            System.out.println("Graph is bipartite");
+        } else {
+            System.out.println("Graph is not a bipartite");
         }
 	}
 }
