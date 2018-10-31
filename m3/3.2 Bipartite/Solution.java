@@ -12,6 +12,12 @@ class Solution {
             int w = Integer.parseInt(inputs[1]);
 			gp.addEdge(v, w);
 		}
-		System.out.println(gp);
+		Cycle finder = new Cycle(gp);
+		if (finder.hasCycle()) {
+            for (int v : finder.cycle()) {
+               System.out.println(v + " ");
+            }
+            System.out.println();
+        }
 	}
 }
