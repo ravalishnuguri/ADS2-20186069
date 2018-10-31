@@ -1,14 +1,7 @@
 Starting audit...
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:25:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:27:40: Expected @param tag for 'g'. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:39:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Directedcycle.java:82:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Solution.java:3: Missing a Javadoc comment. [JavadocType]
