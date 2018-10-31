@@ -1,7 +1,18 @@
 import java.util.Scanner;
-class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() { }
-	public static void main(String[] args) {
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner in = new Scanner(System.in);
 		int ve = Integer.parseInt(in.nextLine());
 		Graph gp = new Graph(ve);
