@@ -4,8 +4,8 @@
  *
  *  A generic stack, implemented using a linked list. Each stack
  *  element is of type Item.
- *  
- *  % more tobe.txt 
+ *
+ *  % more tobe.txt
  *  to be or not to - be - - that - - - is
  *
  *  % java Stack < tobe.txt
@@ -23,7 +23,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * size of the stack.
      */
-    private int N;
+    private int no;
     /**
      * top of stack.
      */
@@ -47,7 +47,7 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public Stack() {
         first = null;
-        N = 0;
+        no = 0;
     }
 
    /**
@@ -65,7 +65,7 @@ public class Stack<Item> implements Iterable<Item> {
     * @return     { description_of_the_return_value }
     */
     public int size() {
-        return N;
+        return no;
     }
 
    /**
@@ -78,7 +78,7 @@ public class Stack<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        no++;
     }
    /**
     * { function_description }.
@@ -91,7 +91,7 @@ public class Stack<Item> implements Iterable<Item> {
         }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
-        N--;
+        no--;
         return item;                   // return the saved item
     }
 
@@ -102,7 +102,9 @@ public class Stack<Item> implements Iterable<Item> {
     * @return     { description_of_the_return_value }
     */
     public Item peek() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         return first.item;
     }
 
@@ -131,13 +133,18 @@ public class Stack<Item> implements Iterable<Item> {
      */
     private class ListIterator implements Iterator<Item> {
         private Node current = first;
-        public boolean hasNext() { 
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
+        public boolean hasNext() {
             return current != null;
         }
         /**
          * { function_description }.
          */
-        public void remove() { 
+        public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
@@ -150,7 +157,7 @@ public class Stack<Item> implements Iterable<Item> {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }

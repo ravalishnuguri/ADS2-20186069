@@ -13,15 +13,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:8: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:26:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:105: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:133:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:134: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:134:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:140: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:153: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:135:9: Missing a Javadoc comment. [JavadocVariable]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 1 errors.
