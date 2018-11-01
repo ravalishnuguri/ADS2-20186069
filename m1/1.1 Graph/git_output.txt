@@ -1,0 +1,10 @@
+warning: LF will be replaced by CRLF in m1/1.1 Graph/Bag.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m1/1.1 Graph/Solution.java.
+The file will have its original line endings in your working directory.
+[master 3d07819] "ads2_m1_a1_1: 8/8 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 2 files changed, 1 insertion(+), 5 deletions(-)
+ rewrite m1/1.1 Graph/result/score.json (80%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/ravalishnuguri/ADS2-20186069.git
+   20c9a99..3d07819  master -> master

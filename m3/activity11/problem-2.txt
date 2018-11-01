@@ -1,0 +1,8 @@
+Q)Draw all the nonisomorphic DAGs with two, three, four, and five vertices ?
+
+A)The number of nonisomorphic simple graphs on n nodes can be given by NumberOfGraphs[n] in the Wolfram Language package Combinatorica` , and the values for n=1, 2, ... are 1, 2, 4, 11, 34, 156, 1044, 12346, 274668, ... (OEIS A000088; see above figure). King and Palmer (cited in Read 1981) have calculated S_n up to n=24, for which
+
+ S_(24)=195704906302078447922174862416726256004122075267063365754368. 
+
+
+ 

@@ -1,0 +1,51 @@
+Draw the adjacency list digraph representation for the input below.
+12
+16
+8 4
+2 3
+1 11
+0 6
+3 6
+10 3
+7 11
+7 8
+11 8
+2 0
+6 2
+5 2
+5 10
+3 10
+8 1
+4 1
+
+ANS)  in the graph we have 12 vertices and 16 edges.the adjacency-list graph representation is as follow::
+
+
+
+                           0 ->6
+
+                           1 ->11
+
+                           2 ->3 ->0
+
+                           3 ->6 ->10
+
+                           4 ->1
+
+                           5 ->2 ->10
+
+                           6 ->2
+
+                           7 ->11 ->8
+
+                           8 ->4 ->1
+
+                           9 -> (none)
+
+                           10 ->3
+
+                           11 ->8
+
+                           12 -> (none)
+
+
