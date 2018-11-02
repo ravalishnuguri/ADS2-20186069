@@ -695,12 +695,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 129 errors.
 Starting audit...
-[ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\WordNet.java:16: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\WordNet.java:39: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\WordNet.java:157:8: Unused @param tag for 'below'. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\WordNet.java:161:38: Expected @param tag for 'nounA'. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\WordNet.java:161:58: Expected @param tag for 'nounB'. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\WordNet.java:167: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 7 errors.

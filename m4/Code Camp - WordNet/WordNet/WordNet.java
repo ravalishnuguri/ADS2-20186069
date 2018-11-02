@@ -14,7 +14,7 @@ public class WordNet {
      */
     private LinearProbingHashST<String, ArrayList<Integer>> ht;
     /**
-     * hashtable2
+     * hashtable2.
      */
     private LinearProbingHashST<Integer, String> ht1;
      /**
@@ -36,7 +36,7 @@ public class WordNet {
      * @param      hypernyms  The hypernyms
      * @throws     Exception   for exceptions
      */
-    public WordNet(final String synsets, 
+    public WordNet(final String synsets,
         final String hypernyms) throws Exception {
         buildht(synsets);
         buildg(hypernyms);
@@ -152,9 +152,10 @@ g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
     }
 
     /**
-     * distance between nounA and nounB (defined below).
+     * method for distance.
      *
-     * @param      below  The below
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
      *
      * @return     { description_of_the_return_value }
      */
@@ -164,7 +165,6 @@ g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
         return dist;
     }
     /**
-     * 
      * method for sap.
      *
      * @param      nounA  The noun a
