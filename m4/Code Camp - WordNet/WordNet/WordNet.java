@@ -13,7 +13,10 @@ public class WordNet {
      * hashtable.
      */
     private LinearProbingHashST<String, ArrayList<Integer>> ht;
-     LinearProbingHashST<Integer, String> ht1;
+    /**
+     * hashtable2
+     */
+    private LinearProbingHashST<Integer, String> ht1;
      /**
       * int v variable.
       */
@@ -31,8 +34,10 @@ public class WordNet {
      *
      * @param      synsets    The synsets
      * @param      hypernyms  The hypernyms
+     * @throws     Exception   for exceptions
      */
-    public WordNet(final String synsets, final String hypernyms) throws Exception {
+    public WordNet(final String synsets, 
+        final String hypernyms) throws Exception {
         buildht(synsets);
         buildg(hypernyms);
     }
@@ -68,10 +73,10 @@ g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
     /**
      * method to check a cycle.
      *
-     * @param      g     { parameter_description }
+     * @param      g1    { parameter_description }
      */
-    private void iscycle(final Digraph g) {
-        DirectedCycle obj = new DirectedCycle(g);
+    private void iscycle(final Digraph g1) {
+        DirectedCycle obj = new DirectedCycle(g1);
         if (obj.hasCycle()) {
             System.out.println("Cycle detected");
             flag = true;
@@ -81,12 +86,12 @@ g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
     /**
      * method for rooted graph.
      *
-     * @param      g     { parameter_description }
+     * @param      g2     { parameter_description }
      */
-    private void isrooteddigraph(final Digraph g) {
+    private void isrooteddigraph(final Digraph g2) {
         int count = 0;
-        for (int i = 0; i < g.V(); i++) {
-            if (g.outdegree(i) == 0) {
+        for (int i = 0; i < g2.V(); i++) {
+            if (g2.outdegree(i) == 0) {
                 count++;
             }
             if (count > 1) {
@@ -158,9 +163,9 @@ g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
         int dist = sap.length(ht.get(nounA), ht.get(nounB));
         return dist;
     }
-
     /**
-     * method for shortest ancestral path.
+     * 
+     * method for sap.
      *
      * @param      nounA  The noun a
      * @param      nounB  The noun b
