@@ -4,7 +4,7 @@
  *  Dependencies: Bag.java In.java StdOut.java
  *  Data files:   https://algs4.cs.princeton.edu/42digraph/tinyDG.txt
  *                https://algs4.cs.princeton.edu/42digraph/mediumDG.txt
- *                https://algs4.cs.princeton.edu/42digraph/largeDG.txt  
+ *                https://algs4.cs.princeton.edu/42digraph/largeDG.txt
  *
  *  A graph, implemented using an array of lists.
  *  Parallel edges and self-loops are permitted.
@@ -101,7 +101,7 @@ public class Digraph {
             for (int i = 0; i < E; i++) {
                 int v = in.readInt();
                 int w = in.readInt();
-                addEdge(v, w); 
+                addEdge(v, w);
             }
         }
         catch (NoSuchElementException e) {

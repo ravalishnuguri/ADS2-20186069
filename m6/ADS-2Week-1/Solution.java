@@ -11,7 +11,11 @@ class PageRank {
     /**
      * variable initial rank.
      */
-    private double intitialrank;
+    private double intitialrank = 1;
+    /**
+     * maximum number of iterations.
+     */
+    private int maxiteration = 1000;
     /**
      * method to calculate page rank.
      * O(|E|*I) where |E| is the number of edges and
@@ -19,10 +23,10 @@ class PageRank {
      *
      * @param      g1    The g 1
      */
-   public void pageRank(Digraph g1) {
-        for (int i = 0; i < g1.V(); i++) {
+   public void pageRank(final Digraph g1) {
+        // for (int i = 0; i < g1.V(); i++) {
 
-        }
+        // }
     }
     /**
      * Gets the pr.
@@ -31,7 +35,7 @@ class PageRank {
      *
      * @return     The pr.
      */
-    double getPR(int v) {
+    double getPR(final int v) {
         return 0;
     }
     /**
@@ -65,7 +69,7 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int v = Integer.parseInt(s.nextLine());
         int e;
@@ -75,7 +79,7 @@ final class Solution {
             int e1 = Integer.parseInt(tokens[0]);
             int size = tokens.length;
             if (size > 2) {
-                for(int i = 1; i < tokens.length; i++) {
+                for (int i = 1; i < tokens.length; i++) {
                     dg.addEdge(e1, Integer.parseInt(tokens[i]));
                 }
             } else {
@@ -89,7 +93,6 @@ final class Solution {
         // Create page rank object and pass the graph object to the constructor
         System.out.println(pr);
         // print the page rank object
-        
 
 
 

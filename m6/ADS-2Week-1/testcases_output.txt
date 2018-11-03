@@ -20,10 +20,10 @@ Your Output:
 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.toString(Solution.java:44)
+	at PageRank.toString(Solution.java:48)
 	at java.base/java.lang.String.valueOf(Unknown Source)
 	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:90)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -48,10 +48,10 @@ Your Output:
 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.toString(Solution.java:44)
+	at PageRank.toString(Solution.java:48)
 	at java.base/java.lang.String.valueOf(Unknown Source)
 	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:90)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -76,10 +76,10 @@ Your Output:
 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.toString(Solution.java:44)
+	at PageRank.toString(Solution.java:48)
 	at java.base/java.lang.String.valueOf(Unknown Source)
 	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:90)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -116,10 +116,10 @@ Your Output:
 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.toString(Solution.java:44)
+	at PageRank.toString(Solution.java:48)
 	at java.base/java.lang.String.valueOf(Unknown Source)
 	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:90)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -141,7 +141,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:86)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -167,7 +167,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:86)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -192,10 +192,10 @@ Your Output:
 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.toString(Solution.java:44)
+	at PageRank.toString(Solution.java:48)
 	at java.base/java.lang.String.valueOf(Unknown Source)
 	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:90)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -217,7 +217,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:86)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -242,10 +242,10 @@ Your Output:
 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.toString(Solution.java:44)
+	at PageRank.toString(Solution.java:48)
 	at java.base/java.lang.String.valueOf(Unknown Source)
 	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:90)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -267,7 +267,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:86)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -286,10 +286,10 @@ Your Output:
 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.toString(Solution.java:44)
+	at PageRank.toString(Solution.java:48)
 	at java.base/java.lang.String.valueOf(Unknown Source)
 	at java.base/java.io.PrintStream.println(Unknown Source)
-	at Solution.main(Solution.java:90)
+	at Solution.main(Solution.java:94)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -331,6 +331,6 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "q
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:75)
+	at Solution.main(Solution.java:79)
 ----------------------------------------
 
