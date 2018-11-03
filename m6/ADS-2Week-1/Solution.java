@@ -19,7 +19,7 @@ public class Solution {
 			int e1 = Integer.parseInt(tokens[0]);
 			int size = tokens.length;
 			if (size > 2) {
-				for(int i = 1; i <= tokens.length; i++) {
+				for(int i = 1; i < tokens.length; i++) {
 					dg.addEdge(e1, Integer.parseInt(tokens[i]));
 				}
 			} else {
