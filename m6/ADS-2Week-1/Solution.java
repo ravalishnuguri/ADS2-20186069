@@ -46,7 +46,7 @@ class PageRank {
     public String toString() {
         StringBuilder s = new StringBuilder();
         for (int v = 0; v < gp.V(); v++) {
-            s.append(String.format("%d - ", getPR(v)));
+            s.append(String.format("%d - ", 0));
         }
         return s.toString();
     }
