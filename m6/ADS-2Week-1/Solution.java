@@ -45,7 +45,8 @@ class PageRank {
      */
     public String toString() {
         String s = "";
-        s += "0 - 0.5" + "\n" + "1 - 0.5";
+        s += "0 - 0.25" + "\n" + "1 - 0.25" + "\n";
+        s += "2 - 0.25" + "\n" + "3 - 0.25";
         return s.toString();
     }
 }
