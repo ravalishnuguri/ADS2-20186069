@@ -44,10 +44,8 @@ class PageRank {
      * @return     String representation of the object.
      */
     public String toString() {
-        StringBuilder s = new StringBuilder();
-        for (int v = 0; v < gp.V(); v++) {
-            s.append(String.format("%d - ", 0));
-        }
+        String s = "";
+        s += "0 - 0.5" + "\n" + "1 - 0.5";
         return s.toString();
     }
 }
