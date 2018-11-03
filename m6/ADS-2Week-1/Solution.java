@@ -15,7 +15,7 @@ class PageRank {
     /**
      * maximum number of iterations.
      */
-    private int maxiteration = 1000;
+    private final int maxiteration = 1000;
     /**
      * method to calculate page rank.
      * O(|E|*I) where |E| is the number of edges and
