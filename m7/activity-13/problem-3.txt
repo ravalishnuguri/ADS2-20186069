@@ -1,0 +1,3 @@
+Q)How would you find a maximum spanning tree of an edge-weighted graph?
+
+A)In a graph G, finding maximum spanning tree is same as finding minimum spanning tree except in maximum spanning tree we consider the edges with max weight where as in minimun spanning tree we consider edges with min weight edges.

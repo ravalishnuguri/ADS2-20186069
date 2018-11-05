@@ -1,0 +1,8 @@
+warning: LF will be replaced by CRLF in m4/Code Camp - WordNet/WordNet/WordNet.java.
+The file will have its original line endings in your working directory.
+[master 65a63c8] "ads2_m4_a1_1: 15/15 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 7 insertions(+), 15 deletions(-)
+ rewrite m4/Code Camp - WordNet/WordNet/result/score.json (88%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/ravalishnuguri/ADS2-20186069.git
+   dd17d90..65a63c8  master -> master

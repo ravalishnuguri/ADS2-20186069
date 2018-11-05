@@ -1,0 +1,3 @@
+Q)Show that if a graph's edges all have distinct weights, the MST is unique.
+
+A)Let us consider a edge-weighted undirected graph G, when all its edges have different weights then there will be only one MST is possible.IF it have 2 edges with same weights then there is possibility that we will have more than one MST. SO, that's why if a graph's edges all have distinct weights, then the  MST is considered unique.
