@@ -34,7 +34,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
+[ERROR] E:\MSIT\ADS2-20186069\m7\1. MST\MinPQ.java:90:32: '4' is a magic number. [MagicNumber]
 Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m7\1. MST\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\MSIT\ADS2-20186069\m7\1. MST\Queue.java:9: Line has trailing spaces. [RegexpSingleline]
