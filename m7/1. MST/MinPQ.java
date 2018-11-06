@@ -13,6 +13,10 @@ public class MinPQ<Key> {
      */
     private int n;
     /**
+     * magic number.
+     */
+    private final int magic = 4;
+    /**
      * optional comparator.
      */
     private Comparator<Key> comparator;
@@ -86,8 +90,8 @@ public class MinPQ<Key> {
         exch(1, n--);
         sink(1);
         pq[n + 1] = null;
-        if ((n > 0) && (n == (pq.length - 1) / 2 + 2)) {
-            resize(pq.length / 4);
+        if ((n > 0) && (n == (pq.length - 1) / magic)) {
+            resize(pq.length / 2);
         }
         return min;
     }
