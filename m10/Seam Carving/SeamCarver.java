@@ -16,7 +16,7 @@ public class SeamCarver {
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height ; j++) {
                 if(i == 0 || j == 0 || j == (height - 1) || i == (width - 1)) {
-                    
+                    energy[i][j] = 1000.0;
                 } else {
                     energy[i][j] = sqroot(i, j);
                 }
