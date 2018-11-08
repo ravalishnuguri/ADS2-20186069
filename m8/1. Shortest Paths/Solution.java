@@ -263,7 +263,7 @@ final class Solution {
         int edges = Integer.parseInt(tokens[1]);
         String[] vertices = scan.nextLine().split(" ");
         for (int i = 0; i < vertices.length; i++) {
-            map.put(vertices[i], 0);
+            map.put(vertices[i], i);
         }
         Edge edgeObj;
         EdgeWeightedGraph digraph
