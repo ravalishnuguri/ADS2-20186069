@@ -13,7 +13,15 @@ public class SeamCarver {
         this.width = picture.width();
         this.height = picture.height();
         this.energy = new double[width][height];
-
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height ; j++) {
+                if(i == 0 || j == 0 || j == (height - 1) || i == (width - 1)) {
+                    
+                } else {
+                    energy[i][j] = sqroot(i, j);
+                }
+            }
+        }
     }
     // current picture
     public Picture picture() {
@@ -31,15 +39,6 @@ public class SeamCarver {
 
     // energy of pixel at column x and row y
     public double energy(int x, int y) {
-        for (int i = 0; i < width; i++) {
-            for (int j = 0; j < height ; j++) {
-                if(x == 0 || y == 0 || y == (picture.height() - 1) || x == (picture.width() - 1)) {
-                    
-                } else {
-                    energy[i][j] = sqroot(i, j);
-                }
-            }
-        }
         return energy[x][y];
     }
     public double sqroot(int i, int j) {
