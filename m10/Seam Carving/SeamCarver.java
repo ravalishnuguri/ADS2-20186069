@@ -3,49 +3,68 @@ import java.lang.Math;
 public class SeamCarver {
     // create a seam carver object based on the given picture
     private Picture picture;
+    private int width, height;
+    private double energy[][];
     public SeamCarver(Picture pic) {
         if (pic == null) {
             throw new IllegalArgumentException("picture is null");
         }
         this.picture = pic;
+        this.width = picture.width();
+        this.height = picture.height();
+        this.energy = new double[width][height];
 
     }
     // current picture
     public Picture picture() {
-        return null;
+        return picture;
     }
     // width of current picture
     public int width() {
-        return this.picture.width();
+        return width;
     }
 
     // height of current picture
     public int height() {
-        return this.picture.height();
+        return height;
     }
 
     // energy of pixel at column x and row y
     public double energy(int x, int y) {
-        if(x == 0 || y == 0 || y == (picture.height() - 1) || x == (picture.width() - 1)) {
-            return 1000.0;
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height ; j++) {
+                if(x == 0 || y == 0 || y == (picture.height() - 1) || x == (picture.width() - 1)) {
+                    
+                } else {
+                    energy[i][j] = sqroot(i, j);
+                }
+            }
         }
-        double coordinatex = 0.0;
-        double coordinatey = 0.0;
-        Color object = picture.get(x,y);
-        Color leftObj = picture.get(x, y - 1);
-        Color rightObj = picture.get(x, y + 1);
-        double xR = Math.abs((leftObj.getRed() - rightObj.getRed()));
-        double xG = Math.abs((leftObj.getGreen() - rightObj.getGreen()));
-        double xB = Math.abs((leftObj.getBlue() - rightObj.getBlue()));
-        coordinatex = Math.pow(xR, 2) + Math.pow(xB, 2) + Math.pow(xG, 2);
-        Color topObj = picture.get(x - 1, y);
-        Color bottomObj = picture.get(x + 1, y);
-        double yR = Math.abs((topObj.getRed() - bottomObj.getRed()));
-        double yG = Math.abs((topObj.getGreen() - bottomObj.getGreen()));
-        double yB = Math.abs((topObj.getBlue() - bottomObj.getBlue()));
-        coordinatey = Math.pow(yR, 2) + Math.pow(yB, 2) + Math.pow(yG, 2);
-        double result = Math.sqrt((coordinatey + coordinatey));
-        return result;
+        return energy[x][y];
+    }
+    public double sqroot(int i, int j) {
+        int xaxis = xaxis(i, j);
+        int yaxis = yaxis(i, j);
+        double energy1 = Math.sqrt(xaxis + yaxis);
+        return energy1;
+    }
+    public int xaxis(int i, int j) {
+        Color e1 = picture.get(i - 1, j);
+        Color e2 = picture.get(i + 1, j);
+        int r = e1.getRed() - e2.getRed();
+        int g = e1.getGreen() - e2.getGreen();
+        int b = e1.getBlue() - e2.getBlue();
+        int xaxis = (r * r) + (g * g) + (b * b);
+        return xaxis;
+    }
+    public int yaxis(int i, int j) {
+        Color e1 = picture.get(i - 1, j);
+        Color e2 = picture.get(i + 1, j);
+        int r = e1.getRed() - e2.getRed();
+        int g = e1.getGreen() - e2.getGreen();
+        int b = e1.getBlue() - e2.getBlue();
+        int yaxis = (r * r) + (g * g) + (b * b);
+        return yaxis;
     }
 
     // sequence of indices for horizontal seam
