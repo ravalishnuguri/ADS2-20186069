@@ -1,7 +1,5 @@
 Starting audit...
-[ERROR] E:\MSIT\ADS2-20186069\m8\1. Shortest Paths\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m8\1. Shortest Paths\IndexMinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
