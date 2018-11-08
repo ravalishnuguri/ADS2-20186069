@@ -5,7 +5,7 @@ public class SeamCarver {
     private Picture picture;
     public SeamCarver(Picture pic) {
         if (pic == null) {
-            throw new IllegalArgumentException("constructor argument is null");
+            throw new IllegalArgumentException("picture is null");
         }
         this.picture = pic;
 
@@ -26,6 +26,9 @@ public class SeamCarver {
 
     // energy of pixel at column x and row y
     public double energy(int x, int y) {
+        if(x == 0 || y == 0 || y == (picture.height() - 1) || x == (picture.width() - 1)) {
+            return 1000.0;
+        }
         double coordinatex = 0.0;
         double coordinatey = 0.0;
         Color object = picture.get(x,y);
