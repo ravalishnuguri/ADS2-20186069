@@ -263,13 +263,13 @@ final class Solution {
         int edges = Integer.parseInt(tokens[1]);
         String[] vertices = scan.nextLine().split(" ");
         for (int i = 0; i < vertices.length; i++) {
-            map.put(vertices[i], i);
+            map.put(vertices[i], 0);
         }
         Edge edgeObj;
         EdgeWeightedGraph digraph
         = new EdgeWeightedGraph(vertices.length);
         for (int i = 0; i < edges; i++) {
-            String[] directPath = scan.nextLine().split("");
+            String[] directPath = scan.nextLine().split(" ");
             edgeObj = new Edge(map.get(directPath[0]),
                                map.get(directPath[1]),
                                Double.parseDouble(directPath[2]));
