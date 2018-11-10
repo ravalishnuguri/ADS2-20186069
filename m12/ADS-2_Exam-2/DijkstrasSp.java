@@ -125,7 +125,6 @@ class DijkstrasSP {
      * @param      vertex  The vertex
      */
     public void print(final int vertex) {
-        System.out.print(vertex);
         for (Edge each: pathTo(vertex)) {
             System.out.print(each.either() + " ");
         }
