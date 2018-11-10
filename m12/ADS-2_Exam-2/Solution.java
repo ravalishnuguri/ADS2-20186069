@@ -1,8 +1,18 @@
 import java.util.Scanner;
+/**
+ * code for Solution class.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-
     }
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int v = Integer.parseInt(s.nextLine());
@@ -26,7 +36,7 @@ final class Solution {
             String[] input = s.nextLine().split(" ");
             DijkstrasSP dj
             = new DijkstrasSP(ewg, Integer.parseInt(input[0]));
-            if(dj.hasPathTo(Integer.parseInt(input[1]))) {
+            if (dj.hasPathTo(Integer.parseInt(input[1]))) {
                 System.out.println(dj.distance(Integer.parseInt(input[1])));
             } else {
                 System.out.println("No Path Found.");
@@ -34,10 +44,12 @@ final class Solution {
             break;
         case "ViaPaths":
             String[] viapath = s.nextLine().split(" ");
-            DijkstrasSP dj1 = new DijkstrasSP(ewg, Integer.parseInt(viapath[0]));
-            if(dj1.hasPathTo(Integer.parseInt(viapath[2]))) {
-                if(dj1.viaPath(Integer.parseInt(viapath[2]), Integer.parseInt(viapath[1]))) {
-                    System.out.println(dj1.distance(Integer.parseInt(viapath[2])));
+        DijkstrasSP dj1 = new DijkstrasSP(ewg, Integer.parseInt(viapath[0]));
+            if (dj1.hasPathTo(Integer.parseInt(viapath[2]))) {
+                if (dj1.viaPath(Integer.parseInt(viapath[2]),
+                    Integer.parseInt(viapath[1]))) {
+                    System.out.println(dj1.distance(
+                        Integer.parseInt(viapath[2])));
                     dj1.print(Integer.parseInt(viapath[2]));
                 }
             } else {

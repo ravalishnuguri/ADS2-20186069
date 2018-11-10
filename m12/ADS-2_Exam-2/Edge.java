@@ -79,6 +79,11 @@ class Edge implements Comparable<Edge> {
             return 0;
         }
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return String.format("%d-%d %.5f",
          vertexOne, vertexTwo, weight);
@@ -105,6 +110,7 @@ class EdgeWeightedGraph {
      *the constructor to initialize.
      *
      * @param      v vertices count
+     * @param      e edges count
      */
     EdgeWeightedGraph(final int v, final int e) {
         this.vertices = v;
