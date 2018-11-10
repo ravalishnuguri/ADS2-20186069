@@ -47,8 +47,8 @@ final class Solution {
         case "ViaPaths":
             String[] viapath = s.nextLine().split(" ");
         DijkstrasSP dj1 = new DijkstrasSP(ewg, Integer.parseInt(viapath[0]));
-            if (dj1.hasPathTo(Integer.parseInt(viapath[2])) && dj1.hasPathTo
-                (Integer.parseInt(viapath[1]))) {
+            if (dj1.hasPathTo(Integer.parseInt(viapath[2])) && 
+                dj1.hasPathTo(Integer.parseInt(viapath[1]))) {
             System.out.println(dj1.distance(Integer.parseInt(viapath[2])));
                 dj1.print(Integer.parseInt(viapath[2]));
             } else {
