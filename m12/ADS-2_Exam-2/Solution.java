@@ -9,7 +9,8 @@ final class Solution {
     private Solution() {
     }
     /**
-     * { function_description }
+     * main method for the Solution class
+     * time complexity is O(E + V).
      *
      * @param      args  The arguments
      */
@@ -19,7 +20,7 @@ final class Solution {
         int e = Integer.parseInt(s.nextLine());
         Edge edge;
         EdgeWeightedGraph ewg = new EdgeWeightedGraph(v, e);
-        for(int i = 0; i < e; i++) {
+        for (int i = 0; i < e; i++) {
             String[] tokens = s.nextLine().split(" ");
             edge = new Edge(Integer.parseInt(tokens[0]),
                                Integer.parseInt(tokens[1]),
@@ -46,12 +47,8 @@ final class Solution {
             String[] viapath = s.nextLine().split(" ");
         DijkstrasSP dj1 = new DijkstrasSP(ewg, Integer.parseInt(viapath[0]));
             if (dj1.hasPathTo(Integer.parseInt(viapath[2]))) {
-                if (dj1.viaPath(Integer.parseInt(viapath[2]),
-                    Integer.parseInt(viapath[1]))) {
-                    System.out.println(dj1.distance(
-                        Integer.parseInt(viapath[2])));
-                    dj1.print(Integer.parseInt(viapath[2]));
-                }
+                System.out.println(dj1.distance(Integer.parseInt(viapath[2])));
+                 dj1.print(Integer.parseInt(viapath[2]));
             } else {
                 System.out.println("No Path Found.");
             }

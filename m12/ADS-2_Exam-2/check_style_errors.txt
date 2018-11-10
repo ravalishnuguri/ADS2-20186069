@@ -2,23 +2,15 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:122:6: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:124:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:125:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:129:11: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:134:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:135:12: 'for' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:11: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:22:12: 'for' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
