@@ -2,8 +2,14 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:122:6: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:124:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:125:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:129:11: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:134:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\DijkstrasSp.java:135:12: 'for' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Edge.java:82:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Edge.java:109:46: Expected @param tag for 'e'. [JavadocMethod]
@@ -19,9 +25,11 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:12:12: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:29:15: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:37: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:38: Line is longer than 80 characters (found 108). [LineLength]
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:38:15: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:39: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:39:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:40: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.

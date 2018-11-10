@@ -119,4 +119,21 @@ class DijkstrasSP {
         }
         return sum;
     }
+     public boolean viaPath(final int vertex, final int via) {
+        int flag = 0;
+        for(Edge each: pathTo(vertex)) {
+                if(each.either() == via || each.other(each.either()) == via) {
+                    flag = 1;
+                }
+        }
+        if(flag == 1) {
+            return true;
+        }
+        return false;
+    }
+    public void print(final int vertex) {
+        for(Edge each: pathTo(vertex)) {
+            System.out.print(each.either() + " ");
+        }
+    }
 }
