@@ -24,15 +24,15 @@ final class Solution {
 			break;
 
 		case "DirectedPaths":
-			// String[] check = scan.nextLine().split(" ");
-			// DijkstrasSP disp
-			// = new DijkstrasSP(graph, Integer.parseInt(check[0]));
-			// if(disp.hasPathTo(Integer.parseInt(check[1]))) {
-			// 	System.out.println(disp.distance(Integer.parseInt(check[1])));
-			// } else {
-			// 	System.out.println("No Path Found.");
-			// }
-			// break;
+			String[] check = scan.nextLine().split(" ");
+			DijkstrasSP disp
+			= new DijkstrasSP(graph, Integer.parseInt(check[0]));
+			if(disp.hasPathTo(Integer.parseInt(check[1]))) {
+				System.out.println(disp.distance(Integer.parseInt(check[1])));
+			} else {
+				// System.out.println("");
+			}
+			break;
 		case "ViaPaths":
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.
