@@ -10,7 +10,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:50:17: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
