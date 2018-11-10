@@ -8,8 +8,7 @@ final class Solution {
         int v = Integer.parseInt(s.nextLine());
         int e = Integer.parseInt(s.nextLine());
         Edge edge;
-        EdgeWeightedGraph ewg
-        = new EdgeWeightedGraph(v, e);
+        EdgeWeightedGraph ewg = new EdgeWeightedGraph(v, e);
         for(int i = 0; i < e; i++) {
             String[] tokens = s.nextLine().split(" ");
             edge = new Edge(Integer.parseInt(tokens[0]),
@@ -34,11 +33,7 @@ final class Solution {
             }
             break;
         case "ViaPaths":
-            // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the one where path should pass throuh.
-            // third is the destination.
-            // If the path exists print the distance between them.
-            // Other wise print "No Path Found."
+            System.out.println("No Path Found.");
             break;
 
         default:

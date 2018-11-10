@@ -16,10 +16,9 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:13:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:30:15: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:38: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:12:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:29:15: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
