@@ -10,7 +10,8 @@ final class Solution {
     }
     /**
      * main method for the Solution class
-     * time complexity is O(E + V).
+     * time complexity is O(E + E).
+     * E is the edges.
      *
      * @param      args  The arguments
      */
@@ -48,7 +49,7 @@ final class Solution {
         DijkstrasSP dj1 = new DijkstrasSP(ewg, Integer.parseInt(viapath[0]));
             if (dj1.hasPathTo(Integer.parseInt(viapath[2])) && dj1.hasPathTo
                 (Integer.parseInt(viapath[1]))) {
-                System.out.println(dj1.distance(Integer.parseInt(viapath[2])));
+            System.out.println(dj1.distance(Integer.parseInt(viapath[2])));
                 dj1.print(Integer.parseInt(viapath[2]));
             } else {
                 System.out.println("No Path Found.");
