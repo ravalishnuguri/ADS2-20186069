@@ -33,7 +33,13 @@ final class Solution {
             }
             break;
         case "ViaPaths":
-            System.out.println("No Path Found.");
+            String[] viapath = s.nextLine().split(" ");
+            DijkstrasSP dj1 = new DijkstrasSP(ewg, Integer.parseInt(viapath[0]));
+            if(dj1.hasPathTo(Integer.parseInt(viapath[2]))) {
+                System.out.println(dj1.distance(Integer.parseInt(viapath[2])));
+            } else {
+                System.out.println("No Path Found.");
+            }
             break;
 
         default:
