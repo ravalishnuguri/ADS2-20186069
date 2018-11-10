@@ -7,10 +7,6 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:50: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m12\ADS-2_Exam-2\Solution.java:50:61: '&&' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
