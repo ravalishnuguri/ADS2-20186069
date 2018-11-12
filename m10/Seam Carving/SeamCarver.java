@@ -1,6 +1,4 @@
 import java.awt.Color;
-
-
 public class SeamCarver {
     private static final double BORDER = 1000;
     private Picture picture;
@@ -13,21 +11,30 @@ public class SeamCarver {
     }
 
     // current picture
+/**.
+Complexity of this method is O(1)
+*/
     public Picture picture() {
         return this.picture;
     }
-
+/**.
+Complexity of this method is O(1)
     // width of current picture
+*/
     public int width() {
         return this.picture.width();
     }
-
-    // height of current picture
+/**.
+// height of current picture
+Complexity of this method is O(1)
+*/
     public int height() {
         return this.picture.height();
     }
-
-    // energy of pixel at column x and row y
+/**.
+// energy of pixel at column x and row y
+Complexity of this method is O(x*y)
+*/
     public  double energy(int x, int y) {
         int w = width() - 1, h = height() - 1;
         if (x < 0 || x > w || y < 0 || y > h) {
@@ -38,8 +45,10 @@ public class SeamCarver {
         }
         return internalEnergy(x, y);
     }
-
-    // energy of pixel at column x and row y not on boarder
+/**.
+Complexity of this method is O(x*y)
+// energy of pixel at column x and row y not on border
+*/
     private double internalEnergy(int x, int y) {
         Color left = this.picture.get(x - 1, y);
         Color right = this.picture.get(x + 1, y);
@@ -81,7 +90,7 @@ public class SeamCarver {
                 if (col != (w - 1)) {
                     min = Math.min(min, energies[row - 1][col + 1]);
                 } else {
-                	min = min;
+                    min = min;
                 }
                 energies[row][col] += min;
             }

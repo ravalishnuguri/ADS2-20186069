@@ -13,6 +13,7 @@ final class Solution {
     /**
      * printEnergies.
      * @param fileName String.
+    Complexity of the function is O(height*width).
      **/
     public static void printEnergies(final String fileName) {
         Picture picture = new Picture(fileName);
@@ -35,6 +36,7 @@ final class Solution {
      * @param carver seamCarver.
      * @param seam int[].
      * @param direction boolean.
+     Complexity of this method is O(height*width) printing seam
      */
     public static void printSeam(final SeamCarver carver,
      final int[] seam, final boolean direction) {
@@ -64,6 +66,7 @@ final class Solution {
 /**
  * main method.
  * @param args Strings.
+   Complexity of main method is O(n) : where n is the number of cases
  */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
