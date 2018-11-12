@@ -47,7 +47,6 @@ public class LSD {
 
    /**
      * Rearranges the array of W-character strings in ascending order.
-     * 
      * time complexity is O(W *N)
      * W is the fixed length
      * N is the array length
