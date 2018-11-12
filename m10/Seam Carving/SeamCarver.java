@@ -66,7 +66,7 @@ public class SeamCarver {
         int yaxis = (r * r) + (g * g) + (b * b);
         return yaxis;
     }
-     private double[][] initEnergies() {
+    private double[][] initEnergies() {
         double[][] energies = new double[height()][width()];
         for (int i = 0; i < height(); i++) {
             for (int j = 0; j < width(); j++) {
