@@ -165,6 +165,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 55 errors.
 Starting audit...
-[ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
