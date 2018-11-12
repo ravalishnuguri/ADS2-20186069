@@ -4,6 +4,7 @@ public class SeamCarver {
     // create a seam carver object based on the given picture
     private Picture picture;
     private int width, height;
+    private static final double border = 1000;
     private double energy[][];
     public SeamCarver(Picture pic) {
         if (pic == null) {
@@ -16,7 +17,7 @@ public class SeamCarver {
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height ; j++) {
                 if(i == 0 || j == 0 || j == (height - 1) || i == (width - 1)) {
-                    energy[i][j] = 1000.0;
+                    energy[i][j] = border;
                 } else {
                     energy[i][j] = sqroot(i, j);
                 }
@@ -25,16 +26,16 @@ public class SeamCarver {
     }
     // current picture
     public Picture picture() {
-        return picture;
+        return this.picture;
     }
     // width of current picture
     public int width() {
-        return width;
+        return picture.width();
     }
 
     // height of current picture
     public int height() {
-        return height;
+        return picture.height();
     }
 
     // energy of pixel at column x and row y
@@ -75,7 +76,7 @@ public class SeamCarver {
         return energies;
     }
 
-        // pass through an array and mark the shorthest distance from top to entry
+    // pass through an array and mark the shorthest distance from top to entry
     private void topologicalSort(double[][] energies) {
         int h = energies.length, w = energies[0].length;
         for (int row = 1; row < h; row++) {
