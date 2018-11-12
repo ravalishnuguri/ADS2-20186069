@@ -27,7 +27,7 @@
  *
  ******************************************************************************/
 /**
- * 
+ *
  * Class for lsd.
  */
 public class LSD {
@@ -47,6 +47,10 @@ public class LSD {
 
    /**
      * Rearranges the array of W-character strings in ascending order.
+     * 
+     * time complexity is O(W *N)
+     * W is the fixed length
+     * N is the array length
      *
      * @param a the array to be sorted
      * @param w the number of characters per string
@@ -96,56 +100,5 @@ public class LSD {
         }
         result += check[check.length - 1] + "]";
         return result;
-    }
-
-   /**
-     * Rearranges the array of 32-bit integers in ascending order.
-     * This is about 2-3x faster than Arrays.sort().
-     *
-     * @param a the array to be sorted
-     */
-    public static void sort(final int[] a) {
-        final int bits = 32;                 // each int is 32 bits
-        final int r = 1 << BITS_PER_BYTE;    // each bytes is between 0 and 255
-        final int mask = r - 1;              // 0xFF
-        final int w = bits / BITS_PER_BYTE;  // each int is 4 bytes
-
-        int n = a.length;
-        int[] aux = new int[n];
-
-        for (int d = 0; d < w; d++) {
-            // compute frequency counts
-            int[] count = new int[r + 1];
-            for (int i = 0; i < n; i++) {
-                int c = (a[i] >> BITS_PER_BYTE * d) & mask;
-                count[c + 1]++;
-            }
-
-            // compute cumulates
-            for (int k = 0; k < r; k++) {
-                count[k + 1] += count[k];
-            }
-
-            // for most significant byte, 0x80-0xFF comes before 0x00-0x7F
-            if (d == w - 1) {
-                int shift1 = count[r] - count[r / 2];
-                int shift2 = count[r / 2];
-                for (int k = 0; k < r / 2; k++) {
-                    count[k] += shift1;
-                }
-                for (int k = r / 2; k < r; k++) {
-                    count[k] -= shift2;
-                }
-            }
-            // move data
-            for (int i = 0; i < n; i++) {
-                int c = (a[i] >> BITS_PER_BYTE * d) & mask;
-                aux[count[c]++] = a[i];
-            }
-            // copy back
-            for (int i = 0; i < n; i++) {
-                a[i] = aux[i];
-            }
-        }
     }
 }
