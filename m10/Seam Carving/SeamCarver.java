@@ -1,72 +1,70 @@
 import java.awt.Color;
-import java.lang.Math;
 public class SeamCarver {
-    // create a seam carver object based on the given picture
+    private static final double BORDER = 1000;
     private Picture picture;
-    private int width, height;
-    private static final double border = 1000;
-    private double energy[][];
-    public SeamCarver(Picture pic) {
-        if (pic == null) {
-            throw new IllegalArgumentException("picture is null");
+
+    public SeamCarver(Picture picture) {
+        if (picture == null) {
+            throw new java.lang.IllegalArgumentException("picture is null");
         }
-        this.picture = pic;
-        this.width = picture.width();
-        this.height = picture.height();
-        this.energy = new double[width][height];
-        for (int i = 0; i < width; i++) {
-            for (int j = 0; j < height ; j++) {
-                if(i == 0 || j == 0 || j == (height - 1) || i == (width - 1)) {
-                    energy[i][j] = border;
-                } else {
-                    energy[i][j] = sqroot(i, j);
-                }
-            }
-        }
+        this.picture = new Picture(picture);
     }
+
     // current picture
+/**.
+Complexity of this method is O(1)
+*/
     public Picture picture() {
         return this.picture;
     }
+/**.
+Complexity of this method is O(1)
     // width of current picture
+*/
     public int width() {
-        return picture.width();
+        return this.picture.width();
     }
-
-    // height of current picture
+/**.
+// height of current picture
+Complexity of this method is O(1)
+*/
     public int height() {
-        return picture.height();
+        return this.picture.height();
+    }
+/**.
+// energy of pixel at column x and row y
+Complexity of this method is O(x*y)
+*/
+    public  double energy(int x, int y) {
+        int w = width() - 1, h = height() - 1;
+        if (x < 0 || x > w || y < 0 || y > h) {
+            throw new java.lang.IllegalArgumentException("IllegalArgumentException");
+        }
+        if (x == 0 || x == w ||  y == 0 || y == h) {
+            return BORDER;
+        }
+        return internalEnergy(x, y);
+    }
+/**.
+Complexity of this method is O(x*y)
+// energy of pixel at column x and row y not on border
+*/
+    private double internalEnergy(int x, int y) {
+        Color left = this.picture.get(x - 1, y);
+        Color right = this.picture.get(x + 1, y);
+        Color up = this.picture.get(x, y - 1);
+        Color down = this.picture.get(x, y + 1);
+        return Math.sqrt(gradient(left, right) + gradient(up, down));
     }
 
-    // energy of pixel at column x and row y
-    public double energy(int x, int y) {
-        return energy[x][y];
+    private double gradient(Color one, Color two) {
+        double red = one.getRed() - two.getRed();
+        double green = one.getGreen() - two.getGreen();
+        double blue = one.getBlue() - two.getBlue();
+        return red * red + green * green + blue * blue;
     }
-    public double sqroot(int i, int j) {
-        int xaxis = xaxis(i, j);
-        int yaxis = yaxis(i, j);
-        double energy1 = Math.sqrt(xaxis + yaxis);
-        return energy1;
-    }
-    public int xaxis(int i, int j) {
-        Color e1 = picture.get(i - 1, j);
-        Color e2 = picture.get(i + 1, j);
-        int r = e1.getRed() - e2.getRed();
-        int g = e1.getGreen() - e2.getGreen();
-        int b = e1.getBlue() - e2.getBlue();
-        int xaxis = (r * r) + (g * g) + (b * b);
-        return xaxis;
-    }
-    public int yaxis(int i, int j) {
-        Color e1 = picture.get(i, j - 1);
-        Color e2 = picture.get(i, j + 1);
-        int r = e1.getRed() - e2.getRed();
-        int g = e1.getGreen() - e2.getGreen();
-        int b = e1.getBlue() - e2.getBlue();
-        int yaxis = (r * r) + (g * g) + (b * b);
-        return yaxis;
-    }
-     private double[][] initEnergies() {
+
+    private double[][] initEnergies() {
         double[][] energies = new double[height()][width()];
         for (int i = 0; i < height(); i++) {
             for (int j = 0; j < width(); j++) {
