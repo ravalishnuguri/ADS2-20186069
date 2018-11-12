@@ -134,6 +134,7 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\SeamCarver.java:58:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\SeamCarver.java:69:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\SeamCarver.java:69:34: Parameter energies should be final. [FinalParameters]
+[ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\SeamCarver.java:84:17: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\SeamCarver.java:91:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\SeamCarver.java:91:38: Parameter energies should be final. [FinalParameters]
 [ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\SeamCarver.java:102:5: Missing a Javadoc comment. [JavadocMethod]
@@ -163,7 +164,7 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\SeamCarver.java:183: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\SeamCarver.java:183: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.
-Checkstyle ends with 55 errors.
+Checkstyle ends with 56 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

@@ -81,7 +81,7 @@ public class SeamCarver {
                 if (col != (w - 1)) {
                     min = Math.min(min, energies[row - 1][col + 1]);
                 } else {
-                    min = min;
+                	min = min;
                 }
                 energies[row][col] += min;
             }
