@@ -7,7 +7,6 @@ public class TST<Value> {
      * int variable.
      */
     private int n;
-    // size
     /**
      * Node type variable.
      */
