@@ -159,7 +159,6 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Queue.java:100: 'else' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Queue.java:111: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Queue.java:115: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Queue.java:131: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Queue.java:134: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Queue.java:136: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Queue.java:139: Line has trailing spaces. [RegexpSingleline]
@@ -177,7 +176,7 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Queue.java:154: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Queue.java:156: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 32 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

@@ -121,14 +121,14 @@ public class Queue<Item> implements Iterable<Item> {
      *
      * @return the sequence of items in FIFO order, separated by spaces
      */
-    public String toString() {
+     public String toString() {
         StringBuilder s = new StringBuilder();
         for (Item item : this) {
             s.append(item);
-            s.append(' ');
+            s.append("\n");
         }
         return s.toString();
-    } 
+    }
 
     /**
      * Returns an iterator that iterates over the items in this queue in FIFO order.
