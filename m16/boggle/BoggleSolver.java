@@ -19,7 +19,31 @@ map the hashmap for storng the key
 /**.
 list for storing the final list of keys
 */
-    private ArrayList<String> list; 
+    private ArrayList<String> list;
+    /**
+     * magic number.
+     */
+    private final int three = 3;
+    /**
+     * magic number.
+     */
+    private final int five = 5;
+    /**
+     * magic number.
+     */
+    private final int eleven = 11;
+    /**
+     * magic number.
+     */
+    private final int four = 4;
+    /**
+     * magic number.
+     */
+    private final int six = 6;
+    /**
+     * magic number.
+     */
+    private final int seven = 7;
 /**
  * Constructs the object.
  * Complexity is O(l) l is length of dictionary.
@@ -32,16 +56,15 @@ list for storing the final list of keys
         }
     }
 /**
- * 
  * Gets all valid words.
  * Compelxity O(r*c) r:no: of rows, c: no: of cols.
  *
- * @param      board  The board
+ * @param      board1  The board
  *
  * @return     All valid words.
  */
-    public Iterable<String> getAllValidWords(final BoggleBoard board) {
-        this.board = board;
+    public Iterable<String> getAllValidWords(final BoggleBoard board1) {
+        this.board = board1;
         this.map = new HashMap<>();
         this.list = new ArrayList<>();
         boolean[][] marked = new boolean[board.rows()][board.cols()];
@@ -63,16 +86,15 @@ list for storing the final list of keys
  * @param      j       parameter j
  * @param      count   The count
  */
-    private void verifyword(boolean[][] array, String prefix,
-        int i,
-        int j,
+    private void verifyword(final boolean[][] array, String prefix,
+        final int i,
+        final int j,
         int count) {
         char c = board.getLetter(i, j);
         if (c == 'Q') {
             prefix += "QU";
             count += 2;
-        }
-        else {
+        } else {
             prefix += c;
             count += 1;
         }
@@ -80,7 +102,7 @@ list for storing the final list of keys
         boolean temp = false;
         if (dict.contains(prefix)) {
             temp = true;
-            if (count >= 3 && !map.containsKey(prefix)) {
+            if (count >= three && !map.containsKey(prefix)) {
                 map.put(prefix, getScore(prefix));
                 list.add(prefix);
             }
@@ -102,12 +124,12 @@ list for storing the final list of keys
                 if (j + 1 < board.cols() && !array[i - 1][j + 1]) {
                     verifyword(array, prefix, i - 1, j + 1, count);
                 }
-            } 
+            }
             if (i + 1 < board.rows()) {
                 if (j - 1 >= 0 && !array[i + 1][j - 1]) {
                     verifyword(array, prefix, i + 1, j - 1, count);
                 }
-                if (!array[i+1][j]) {
+                if (!array[i + 1][j]) {
                     verifyword(array, prefix, i + 1, j, count);
                 }
                 if (j + 1 < board.cols() && !array[i + 1][j + 1]) {
@@ -129,16 +151,16 @@ list for storing the final list of keys
         if (word.length() <= 2) {
             return 0;
         }
-        if (word.length() == 3 || word.length() == 4) {
+        if (word.length() == three || word.length() == four) {
             return 1;
-        } else if (word.length() == 5) {
+        } else if (word.length() == five) {
             return 2;
-        } else if (word.length() == 6) {
-            return 3;
-        } else if (word.length() == 7) {
-            return 5;
+        } else if (word.length() == six) {
+            return three;
+        } else if (word.length() == seven) {
+            return five;
         } else {
-            return 11;
+            return eleven;
         }
     }
 /**

@@ -560,29 +560,10 @@ Audit done.
 Checkstyle ends with 464 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:22: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:35: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:43:64: 'board' hides a field. [HiddenField]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:66:29: Parameter array should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:66:48: Parameter prefix should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:67:9: Parameter i should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:68:9: Parameter j should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:69:9: Parameter count should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:74:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:83:26: '3' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:105: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:110:29: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:110:30: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:132:30: '3' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:132:52: '4' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:134:37: '5' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:136:37: '6' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:137:20: '3' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:138:37: '7' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:139:20: '5' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:141:20: '11' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:89:54: Parameter prefix should be final. [FinalParameters]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:92:9: Parameter count should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
