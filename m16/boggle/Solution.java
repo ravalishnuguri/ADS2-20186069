@@ -11,9 +11,10 @@ final class Solution {
         // empty constructor
     }
     /**
-     * Main method.
-     * @param args  The arguments
-     Complexity : O(n) for n inputs
+     * main method for Solution.
+     * Complexity : O(n) for n inputs
+     *
+     * @param      args  The arguments
      */
     public static void main(final String[] args) {
         String caseType = StdIn.readLine();

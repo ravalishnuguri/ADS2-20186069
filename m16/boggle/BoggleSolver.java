@@ -20,21 +20,26 @@ map the hashmap for storng the key
 list for storing the final list of keys
 */
     private ArrayList<String> list; 
-/**.
-@param dictionary the string 
-Complexity is O(l) l is length of dictionary
-*/
+/**
+ * Constructs the object.
+ * Complexity is O(l) l is length of dictionary.
+ * @param      dictionary  The dictionary
+ */
     public BoggleSolver(String[] dictionary) {
         dict = new Trie<>();
         for (int i = 0; i < dictionary.length; i++) {
             dict.put(dictionary[i], getScore(dictionary[i]));
         }
     }
-/**.
-@return the return for final list
-@param board the bogglebpard object
-Compelxity O(r*c) r:no: of rows, c: no: of cols
-*/
+/**
+ * 
+ * Gets all valid words.
+ * Compelxity O(r*c) r:no: of rows, c: no: of cols.
+ *
+ * @param      board  The board
+ *
+ * @return     All valid words.
+ */
     public Iterable<String> getAllValidWords(BoggleBoard board) {
         this.board = board;
         this.map = new HashMap<>();
@@ -47,15 +52,17 @@ Compelxity O(r*c) r:no: of rows, c: no: of cols
         }
         return list;
     }
-/**.
-@param array the boolean array for running dfs
-@param prefix the prefix of the string
-@param i the row number
-@param j the column number
-@param count the number of chars in the string
-Complexity O(1) : functional called for every cell once,
-steps are executed for that cell, no loops.
-*/
+/**
+ * method for verifying the word.
+ * Complexity O(1) : functional called for every cell once,
+ * steps are executed for that cell, no loops.
+ *
+ * @param      array   The array
+ * @param      prefix  The prefix
+ * @param      i       { parameter_description }
+ * @param      j       { parameter_description }
+ * @param      count   The count
+ */
     private void verifyword(boolean[][] array, String prefix,
         int i,
         int j,
@@ -102,11 +109,14 @@ steps are executed for that cell, no loops.
         }
         array[i][j] = false;
     }
-/**.
-@param word the wrod for scoring
-Complexity O(1) : score the word appropriately and return
-@return the return for word score
-*/   
+/**
+ * Gets the score.
+ * Complexity O(1) : score the word appropriately and return
+ *
+ * @param      word  The word
+ *
+ * @return     The score.
+ */
     private int getScore(String word) {
         if (word.length() <= 2)
             return 0;
@@ -121,16 +131,18 @@ Complexity O(1) : score the word appropriately and return
         else
             return 11;
     }
-/**.
-@param word the word for scoring
-@return the return for final score
-Complexity O(1) : finds the score and returns
-*/    
+/**
+ * method to return the score of the word.
+ * Complexity O(1) : finds the score and returns
+ *
+ * @param      word  The word
+ *
+ * @return     { description_of_the_return_value }
+ */
     public int scoreOf(String word) {
-        if (dict.contains(word))
+        if (dict.contains(word)) {
             return dict.get(word);
+        }
         return 0;  
     }
 }
-
-
