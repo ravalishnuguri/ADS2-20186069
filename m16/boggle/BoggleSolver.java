@@ -25,7 +25,7 @@ list for storing the final list of keys
  * Complexity is O(l) l is length of dictionary.
  * @param      dictionary  The dictionary
  */
-    public BoggleSolver(String[] dictionary) {
+    public BoggleSolver(final String[] dictionary) {
         dict = new Trie<>();
         for (int i = 0; i < dictionary.length; i++) {
             dict.put(dictionary[i], getScore(dictionary[i]));
@@ -40,7 +40,7 @@ list for storing the final list of keys
  *
  * @return     All valid words.
  */
-    public Iterable<String> getAllValidWords(BoggleBoard board) {
+    public Iterable<String> getAllValidWords(final BoggleBoard board) {
         this.board = board;
         this.map = new HashMap<>();
         this.list = new ArrayList<>();
@@ -86,26 +86,34 @@ list for storing the final list of keys
             }
         }
             if (temp || dict.hasKey(prefix)) {
-            if (j - 1 >= 0 && !array[i][j - 1])
+            if (j - 1 >= 0 && !array[i][j - 1]) {
                 verifyword(array, prefix, i, j - 1, count);
-            if (j + 1 < board.cols() && !array[i][j + 1])
+            }
+            if (j + 1 < board.cols() && !array[i][j + 1]) {
                 verifyword(array, prefix, i, j + 1, count);
+            }
             if (i - 1 >= 0) {
-                if (j - 1 >= 0 && !array[i - 1][j - 1])
+                if (j - 1 >= 0 && !array[i - 1][j - 1]) {
                     verifyword(array, prefix, i - 1, j - 1, count);
-                if (!array[i - 1][j])
+                }
+                if (!array[i - 1][j]) {
                     verifyword(array, prefix, i - 1, j, count);
-                if (j + 1 < board.cols() && !array[i - 1][j + 1])
+                }
+                if (j + 1 < board.cols() && !array[i - 1][j + 1]) {
                     verifyword(array, prefix, i - 1, j + 1, count);
+                }
             } 
             if (i + 1 < board.rows()) {
-                if (j - 1 >= 0 && !array[i + 1][j - 1])
+                if (j - 1 >= 0 && !array[i + 1][j - 1]) {
                     verifyword(array, prefix, i + 1, j - 1, count);
-                if (!array[i+1][j])
+                }
+                if (!array[i+1][j]) {
                     verifyword(array, prefix, i + 1, j, count);
-                if (j + 1 < board.cols() && !array[i + 1][j + 1])
+                }
+                if (j + 1 < board.cols() && !array[i + 1][j + 1]) {
                     verifyword(array, prefix, i + 1, j + 1, count);
-            }  
+                }
+            }
         }
         array[i][j] = false;
     }
@@ -117,19 +125,21 @@ list for storing the final list of keys
  *
  * @return     The score.
  */
-    private int getScore(String word) {
-        if (word.length() <= 2)
+    private int getScore(final String word) {
+        if (word.length() <= 2) {
             return 0;
-        if (word.length() == 3 || word.length() == 4)
+        }
+        if (word.length() == 3 || word.length() == 4) {
             return 1;
-        else if (word.length() == 5)
+        } else if (word.length() == 5) {
             return 2;
-        else if (word.length() == 6)
+        } else if (word.length() == 6) {
             return 3;
-        else if (word.length() == 7)
+        } else if (word.length() == 7) {
             return 5;
-        else
+        } else {
             return 11;
+        }
     }
 /**
  * method to return the score of the word.
@@ -139,10 +149,10 @@ list for storing the final list of keys
  *
  * @return     returns the Score.
  */
-    public int scoreOf(String word) {
+    public int scoreOf(final String word) {
         if (dict.contains(word)) {
             return dict.get(word);
         }
-        return 0;  
+        return 0;
     }
 }

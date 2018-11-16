@@ -561,10 +561,8 @@ Checkstyle ends with 464 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:22: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:28:25: Parameter dictionary should be final. [FinalParameters]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:35: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:43:46: Parameter board should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:43:58: 'board' hides a field. [HiddenField]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:43:64: 'board' hides a field. [HiddenField]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:66:29: Parameter array should be final. [FinalParameters]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:66:48: Parameter prefix should be final. [FinalParameters]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:67:9: Parameter i should be final. [FinalParameters]
@@ -572,37 +570,19 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:69:9: Parameter count should be final. [FinalParameters]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:74:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:83:26: '3' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:89: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:91: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:94: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:96: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:98: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:100: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:102: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:104:29: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:104:30: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:106: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:108: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:120:26: Parameter word should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:121: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:123: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:123:30: '3' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:123:52: '4' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:125: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:125:35: '5' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:127: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:127:35: '6' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:128:20: '3' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:129: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:129:35: '7' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:130:20: '5' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:131: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:132:20: '11' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:142:24: Parameter word should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:146: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:105: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:110:29: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:110:30: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:132:30: '3' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:132:52: '4' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:134:37: '5' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:136:37: '6' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:137:20: '3' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:138:37: '7' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:139:20: '5' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:141:20: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 42 errors.
+Checkstyle ends with 22 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
@@ -785,10 +765,8 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\Solution.java:2:8: Unused import - java.util.Scanner. [UnusedImports]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
