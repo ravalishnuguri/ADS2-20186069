@@ -1,20 +1,40 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-
+/**.
+BoggleSolver class for boggle
+*/
 public class BoggleSolver {
+/**.
+dict the trie dictionary
+*/
     private Trie<Integer> dict;
-
+/**.
+board the boggleboard object
+*/
     private BoggleBoard board;
+/**.
+map the hashmap for storng the key
+*/
     private HashMap<String, Integer> map;
-
+/**.
+list for storing the final list of keys
+*/
     private ArrayList<String> list; 
-
+/**.
+@param dictionary the string 
+Complexity is O(l) l is length of dictionary
+*/
     public BoggleSolver(String[] dictionary) {
         dict = new Trie<>();
         for (int i = 0; i < dictionary.length; i++) {
             dict.put(dictionary[i], getScore(dictionary[i]));
         }
     }
+/**.
+@return the return for final list
+@param board the bogglebpard object
+Compelxity O(r*c) r:no: of rows, c: no: of cols
+*/
     public Iterable<String> getAllValidWords(BoggleBoard board) {
         this.board = board;
         this.map = new HashMap<>();
@@ -27,6 +47,15 @@ public class BoggleSolver {
         }
         return list;
     }
+/**.
+@param array the boolean array for running dfs
+@param prefix the prefix of the string
+@param i the row number
+@param j the column number
+@param count the number of chars in the string
+Complexity O(1) : functional called for every cell once,
+steps are executed for that cell, no loops.
+*/
     private void verifyword(boolean[][] array, String prefix,
         int i,
         int j,
@@ -73,7 +102,11 @@ public class BoggleSolver {
         }
         array[i][j] = false;
     }
-
+/**.
+@param word the wrod for scoring
+Complexity O(1) : score the word appropriately and return
+@return the return for word score
+*/   
     private int getScore(String word) {
         if (word.length() <= 2)
             return 0;
@@ -84,10 +117,15 @@ public class BoggleSolver {
         else if (word.length() == 6)
             return 3;
         else if (word.length() == 7)
-            return 57;
+            return 55;
         else
-            return 115;
-    }    
+            return 11;
+    }
+/**.
+@param word the word for scoring
+@return the return for final score
+Complexity O(1) : finds the score and returns
+*/    
     public int scoreOf(String word) {
         if (dict.contains(word))
             return dict.get(word);
