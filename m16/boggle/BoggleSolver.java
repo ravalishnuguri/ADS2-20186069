@@ -59,8 +59,8 @@ list for storing the final list of keys
  *
  * @param      array   The array
  * @param      prefix  The prefix
- * @param      i       { parameter_description }
- * @param      j       { parameter_description }
+ * @param      i       parameter i
+ * @param      j       parameter j
  * @param      count   The count
  */
     private void verifyword(boolean[][] array, String prefix,
@@ -127,7 +127,7 @@ list for storing the final list of keys
         else if (word.length() == 6)
             return 3;
         else if (word.length() == 7)
-            return 55;
+            return 5;
         else
             return 11;
     }
@@ -137,7 +137,7 @@ list for storing the final list of keys
  *
  * @param      word  The word
  *
- * @return     { description_of_the_return_value }
+ * @return     returns the Score.
  */
     public int scoreOf(String word) {
         if (dict.contains(word)) {

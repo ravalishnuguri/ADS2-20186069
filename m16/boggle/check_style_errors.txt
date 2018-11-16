@@ -596,7 +596,7 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:128:20: '3' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:129: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:129:35: '7' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:130:20: '55' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:130:20: '5' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:131: 'else' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:132:20: '11' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:142:24: Parameter word should be final. [FinalParameters]
