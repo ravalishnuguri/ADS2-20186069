@@ -595,14 +595,11 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:77:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:77:26: Parameter word should be final. [FinalParameters]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:78: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:79:20: '04' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:80: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:80:30: '3' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:80:52: '4' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:81:20: '13' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:82: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:82:35: '5' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:83:20: '22' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:84: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:84:35: '6' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:85:20: '33' is a magic number. [MagicNumber]
@@ -618,7 +615,7 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:92: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:94: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 58 errors.
+Checkstyle ends with 55 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]

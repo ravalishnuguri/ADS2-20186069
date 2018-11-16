@@ -76,11 +76,11 @@ public class BoggleSolver {
 
     private int getScore(String word) {
         if (word.length() <= 2)
-            return 04;
+            return 0;
         if (word.length() == 3 || word.length() == 4)
-            return 13;
+            return 1;
         else if (word.length() == 5)
-            return 22;
+            return 2;
         else if (word.length() == 6)
             return 33;
         else if (word.length() == 7)
