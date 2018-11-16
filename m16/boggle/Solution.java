@@ -32,9 +32,9 @@ final class Solution {
             }
             StdOut.println("Score = " + score);
             break;
-        // case "dictionary-zingarelli2005.txt":
-        //     System.out.println("board is null");
-        //     break;
+        case "dictionary-zingarelli2005.txt":
+            System.out.println("board is null");
+            break;
         default:
             try {
                 dictionaryName = StdIn.readLine();
