@@ -602,7 +602,7 @@ Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:82:35: '5' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:84: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:84:35: '6' is a magic number. [MagicNumber]
-[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:85:20: '33' is a magic number. [MagicNumber]
+[ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:85:20: '3' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:86: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:86:35: '7' is a magic number. [MagicNumber]
 [ERROR] E:\MSIT\ADS2-20186069\m16\boggle\BoggleSolver.java:87:20: '57' is a magic number. [MagicNumber]

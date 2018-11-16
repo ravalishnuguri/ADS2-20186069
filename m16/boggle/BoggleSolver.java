@@ -82,7 +82,7 @@ public class BoggleSolver {
         else if (word.length() == 5)
             return 2;
         else if (word.length() == 6)
-            return 33;
+            return 3;
         else if (word.length() == 7)
             return 57;
         else
