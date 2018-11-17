@@ -20,7 +20,7 @@ Your Output:
 149
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 wont
 working
@@ -57,12 +57,39 @@ messagesome
 going
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TST$Node.access$100(TST.java:58)
-	at TST.put(TST.java:193)
-	at TST.put(TST.java:174)
-	at T9keypad.<init>(Solution.java:144)
-	at Solution.main(Solution.java:32)
+wont
+working
+what
+whatever
+whats
+whatsup
+vegetables
+too
+took
+tookplace
+tool
+toolets
+tooo
+toopray
+toot
+toothpaste
+tootsie
+over
+overa
+overdid
+overdose
+overemphasiseor
+overheating
+overtime
+message
+messaged
+messageit
+messageits
+messageno
+messagepandy
+messages
+messagesome
+going
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -130,12 +157,7 @@ fine
 seeking
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at TST$Node.access$100(TST.java:58)
-	at TST.put(TST.java:193)
-	at TST.put(TST.java:174)
-	at T9keypad.<init>(Solution.java:144)
-	at Solution.main(Solution.java:43)
+No valid words found.
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -147,11 +169,7 @@ words
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at TST$Node.access$100(TST.java:58)
-	at TST.put(TST.java:193)
-	at TST.put(TST.java:174)
-	at T9keypad.<init>(Solution.java:144)
-	at Solution.main(Solution.java:58)
+	at Solution.main(Solution.java:65)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -204,10 +222,6 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at TST$Node.access$100(TST.java:58)
-	at TST.put(TST.java:193)
-	at TST.put(TST.java:174)
-	at T9keypad.<init>(Solution.java:144)
-	at Solution.main(Solution.java:73)
+	at Solution.main(Solution.java:78)
 ----------------------------------------
 
