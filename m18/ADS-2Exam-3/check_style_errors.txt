@@ -376,7 +376,7 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\Solution.java:138:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\Solution.java:140:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...

@@ -10,6 +10,7 @@ final class Solution {
 
     /**
      * main method for Solution.
+     * Complexity : O(n) for n inputs
      *
      * @param      args  The arguments
      */
@@ -52,7 +53,6 @@ final class Solution {
                 System.out.println("No valid words found.");
             }
             break;
-
         case "topK":
             // input003.txt and output003.txt
             t9 = new T9(loadDictionary("/Files/t9.csv"));
@@ -88,6 +88,7 @@ final class Solution {
 
     /**
      * don't modify this method.
+     * Complexity : O(n) for n number of lines
      *
      * @param      file  The file
      *
@@ -99,6 +100,7 @@ final class Solution {
     }
     /**
      * Loads a dictionary.
+     * Complexity : O(n) for n number of lines
      *
      * @param      file  The file
      *
@@ -163,7 +165,7 @@ class T9 {
      */
     public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
-        return null;
+        return tst.keysWithPrefix(t9Signature);
     }
 
     /**

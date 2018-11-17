@@ -157,8 +157,7 @@ fine
 seeking
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:46)
+No valid words found.
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
