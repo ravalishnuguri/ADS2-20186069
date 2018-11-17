@@ -1,16 +1,25 @@
 import java.util.Scanner;
-
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() { }
 
-    // Don't modify this method.
-    public static void main(String[] args) {
+    /**
+     * main method for Solution.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+    BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -71,20 +80,31 @@ public class Solution {
                 }
             }
             break;
-
         default:
             break;
 
         }
     }
 
-    // Don't modify this method.
-    public static String[] toReadFile(String file) {
+    /**
+     * don't modify this method.
+     *
+     * @param      file  The file
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
-
-    public static BinarySearchST<String, Integer> loadDictionary(String file) {
+    /**
+     * Loads a dictionary.
+     *
+     * @param      file  The file
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
         // your code goes here
         String[] k = toReadFile(file);
@@ -99,12 +119,21 @@ public class Solution {
         }
         return st;
     }
-
 }
-
+/**
+ * Class for t 9.
+ */
 class T9 {
+    /**
+     * creating object for TST.
+     */
     private TST<Integer> tst;
-    public T9(BinarySearchST<String, Integer> st) {
+    /**
+     * Constructs the object.
+     *
+     * @param      st    { parameter_description }
+     */
+    public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new  TST<Integer>();
         for(String i: st.keys()) {
@@ -112,26 +141,51 @@ class T9 {
         }
     }
 
-    // get all the prefixes that match with given prefix.
-    public Iterable<String> getAllWords(String prefix) {
+    /**
+     * get all the prefixes that match with given prefix.
+     *
+     * @param      prefix  The prefix
+     *
+     * @return     All words.
+     */
+    public Iterable<String> getAllWords(final String prefix) {
         // your code goes here
         return tst.keysWithPrefix(prefix);
     }
-
-    public Iterable<String> potentialWords(String t9Signature) {
+    /**
+     * method for the potential words.
+     *
+     * @param      t9Signature  The t 9 signature
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
         return null;
     }
 
-    // return all possibilities(words), find top k with highest frequency.
-    public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+    /**
+     * Gets the suggestions.
+     *
+     * @param      words  The words
+     * @param      k      { parameter_description }
+     *
+     * @return     The suggestions.
+     */
+    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
         // your code goes here
         return null;
     }
 
-    // final output
-    // Don't modify this method.
-    public Iterable<String> t9(String t9Signature, int k) {
+    /**
+     * dont modify this method.
+     *
+     * @param      t9Signature  The t 9 signature
+     * @param      k            parameter k
+     *
+     * @return     returns the entire testcase as one.
+     */
+    public Iterable<String> t9(final String t9Signature, final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
