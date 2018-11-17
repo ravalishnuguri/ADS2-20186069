@@ -378,15 +378,6 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:47: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:53: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:58: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:208:29: Parameter x should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:255: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:307:26: Parameter x should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:307:41: Parameter prefix should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:308:9: Parameter queue should be final. [FinalParameters]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:382: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:186:29: Parameter x should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 2 errors.

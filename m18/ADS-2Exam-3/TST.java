@@ -37,28 +37,6 @@
  ******************************************************************************/
 
 /**
- *  The {@code TST} class represents an symbol table of key-value
- *  pairs, with string keys and generic values.
- *  It supports the usual <em>put</em>, <em>get</em>, <em>contains</em>,
- *  <em>delete</em>, <em>size</em>, and <em>is-empty</em> methods.
- *  It also provides character-based methods for finding the string
- *  in the symbol table that is the <em>longest prefix</em> of a given prefix,
- *  finding all strings in the symbol table that <em>start with</em> a given prefix,
- *  and finding all strings in the symbol table that <em>match</em> a given pattern.
- *  A symbol table implements the <em>associative array</em> abstraction:
- *  when associating a value with a key that is already in the symbol table,
- *  the convention is to replace the old value with the new value.
- *  Unlike {@link java.util.Map}, this class uses the convention that
- *  values cannot be {@code null}—setting the
- *  value associated with a key to {@code null} is equivalent to deleting the key
- *  from the symbol table.
- *  <p>
- *  This implementation uses a ternary search trie.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/52trie">Section 5.2</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- */
-/**
  * Class for tst.
  *
  * @param      <Value>  The value
@@ -252,7 +230,9 @@ public class TST<Value> {
                 x = x.right;
             } else {
                 i++;
-                if (x.val != null) length = i;
+                if (x.val != null) {
+                    length = i;
+                }
                 x = x.mid;
             }
         }
@@ -304,8 +284,8 @@ public class TST<Value> {
      * @param      prefix  The prefix
      * @param      queue   The queue
      */
-    private void collect(Node<Value> x, StringBuilder prefix,
-        Queue<String> queue) {
+    private void collect(final Node<Value> x, final StringBuilder prefix,
+        final Queue<String> queue) {
         if (x == null) {
             return;
         }
@@ -379,7 +359,7 @@ public class TST<Value> {
         if (prefixNode.val != null) {
             return true;
         }
-        if (prefixNode.left == null && prefixNode.mid == null 
+        if (prefixNode.left == null && prefixNode.mid == null
             && prefixNode.right == null) {
             return false;
         }
