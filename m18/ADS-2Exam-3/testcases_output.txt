@@ -57,8 +57,7 @@ messagesome
 going
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:25)
+
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
