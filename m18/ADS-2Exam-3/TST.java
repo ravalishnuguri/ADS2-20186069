@@ -186,10 +186,10 @@ public class TST<Value> {
     private Node<Value> put(final Node<Value> x, final String key,
         final Value val, final int d) {
         char c = key.charAt(d);
-        // if (x == null) {
-        //     x = new Node<Value>();
-        //     x.c = c;
-        // }
+        if (x == null) {
+            Node<Value> x1 = new Node<Value>();
+            x1.c = c;
+        }
         if (c < x.c) {
             x.left  = put(x.left,  key, val, d);
         } else if (c > x.c) {

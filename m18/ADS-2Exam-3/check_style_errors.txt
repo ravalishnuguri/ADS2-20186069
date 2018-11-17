@@ -377,4 +377,6 @@ Checkstyle ends with 33 errors.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.
