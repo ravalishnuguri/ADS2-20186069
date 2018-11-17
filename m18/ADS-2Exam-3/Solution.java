@@ -29,7 +29,7 @@ final class Solution {
 
         case "getAllPrefixes":
             // input001.txt and output001.txt
-            T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
+            t9keypad t9 = new t9keypad(loadDictionary("/Files/t9.csv"));
             while (scan.hasNextLine()) {
                 String prefix = scan.nextLine();
                 for (String each : t9.getAllWords(prefix)) {
@@ -40,7 +40,7 @@ final class Solution {
 
         case "potentialWords":
             // input002.txt and output002.txt
-            t9 = new T9(loadDictionary("/Files/t9.csv"));
+            t9 = new t9keypad(loadDictionary("/Files/t9.csv"));
             int count = 0;
             while (scan.hasNextLine()) {
                 String t9Signature = scan.nextLine();
@@ -55,7 +55,7 @@ final class Solution {
             break;
         case "topK":
             // input003.txt and output003.txt
-            t9 = new T9(loadDictionary("/Files/t9.csv"));
+            t9 = new t9keypad(loadDictionary("/Files/t9.csv"));
             Bag<String> bag = new Bag<String>();
             int k = Integer.parseInt(scan.nextLine());
             while (scan.hasNextLine()) {
@@ -70,7 +70,7 @@ final class Solution {
 
         case "t9Signature":
             // input004.txt and output004.txt
-            t9 = new T9(loadDictionary("/Files/t9.csv"));
+            t9 = new t9keypad(loadDictionary("/Files/t9.csv"));
             bag = new Bag<String>();
             k = Integer.parseInt(scan.nextLine());
             while (scan.hasNextLine()) {
@@ -127,7 +127,7 @@ final class Solution {
 /**
  * Class for t 9.
  */
-class T9 {
+class t9keypad {
     /**
      * creating object for TST.
      */
@@ -137,7 +137,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+    t9keypad(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new  TST<Integer>();
         for (String i: st.keys()) {
