@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -104,14 +104,16 @@ public class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+    public static BinarySearchST<String,
+    Integer> loadDictionary(final String file) {
+        BinarySearchST<String, Integer>  st = new BinarySearchST<String,
+        Integer>();
         // your code goes here
         String[] k = toReadFile(file);
         int size = k.length;
-        for(int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             String text = k[i].toLowerCase();
-            if(st.contains(text)) {
+            if (st.contains(text)) {
                 st.put(text, st.get(text) + 1);
             } else {
                 st.put(text, 1);
@@ -136,8 +138,8 @@ class T9 {
     public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new  TST<Integer>();
-        for(String i: st.keys()) {
-            tst.put(i, st.get(i+1));
+        for (String i: st.keys()) {
+            tst.put(i, st.get(i));
         }
     }
 
@@ -172,7 +174,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words,
+        final int k) {
         // your code goes here
         return null;
     }
