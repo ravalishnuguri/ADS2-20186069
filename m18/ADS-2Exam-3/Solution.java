@@ -87,6 +87,16 @@ public class Solution {
     public static BinarySearchST<String, Integer> loadDictionary(String file) {
         BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
         // your code goes here
+        String[] k = toReadFile(file);
+        int size = k.length;
+        for(int i = 0; i < size; i++) {
+            String text = k[i].toLowerCase();
+            if(st.contains(text)) {
+                st.put(text, st.get(text) + 1);
+            } else {
+                st.put(text, 1);
+            }
+        }
         return st;
     }
 
