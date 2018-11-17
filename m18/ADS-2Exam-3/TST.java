@@ -176,16 +176,17 @@ public class TST<Value> {
     /**
      * { function_description }.
      *
-     * @param      x     { parameter_description }
+     * @param      oldx     { parameter_description }
      * @param      key   The key
      * @param      val   The value
      * @param      d     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private Node<Value> put(Node<Value> x, final String key,
+    private Node<Value> put(final Node<Value> oldx, final String key,
         final Value val, final int d) {
         char c = key.charAt(d);
+        Node<Value> x = oldx;
         if (x == null) {
             x = new Node<Value>();
             x.c = c;

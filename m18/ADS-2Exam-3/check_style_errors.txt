@@ -379,7 +379,4 @@ Checkstyle ends with 35 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\MSIT\ADS2-20186069\m18\ADS-2Exam-3\TST.java:186:29: Parameter x should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 2 errors.
