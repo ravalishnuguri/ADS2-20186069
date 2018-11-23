@@ -65,7 +65,8 @@ public class TST<Value> {
     }
 
     /**
-     * Complexity is O(M).
+     * Time complexity is O(L + logN)
+     * L is the length of string and N is the size of tries.
      * Where M is the length of String.
      * Returns the value associated with the given key.
      * @param key the key
@@ -88,7 +89,8 @@ public class TST<Value> {
         return x.val;
     }
 /**
- * Complexity is O(M).
+ * Time complexity is O(L + logN)
+     * L is the length of string and N is the size of tries.
  * Where M is the length of String.
  * get method.
  * @param x Node.
@@ -117,7 +119,8 @@ public class TST<Value> {
     }
 
     /**
-     * Complexity is O(M).
+     * Time complexity is O(L + logN)
+     * L is the length of string and N is the size of tries.
      * Where M is the length of String.
      * Inserts the key-value pair into the
      *  symbol table, overwriting the old value
@@ -138,11 +141,8 @@ public class TST<Value> {
         root = put(root, key, val, 0);
     }
     /**
-     * Complexity is O(M).
-     * Where M is the length of String.
-     * put method.
-     * Complexity is O(M).
-     * Where M is the length of String.
+     * Time complexity is O(L + logN)
+     * L is the length of string and N is the size of tries.
      * @param t node.
      * @param key String.
      * @param val Value.
@@ -170,7 +170,8 @@ public class TST<Value> {
     }
 
     /**
-     * Complexity is O(M).
+     * Time complexity is O(L + logN)
+     * L is the length of string and N is the size of tries.
      * Where M is the length of String.
      * Returns the string in the symbol
      * table that is the longest prefix of {@code query},
@@ -224,7 +225,8 @@ public class TST<Value> {
     }
 
     /**
-     * Complexity is O(M).
+     * Time complexity is O(L + logN)
+     * L is the length of string and N is the size of tries.
      * Where M is the length of String.
      * Returns all of the keys in the set that start with {@code prefix}.
      * @param prefix the prefix
@@ -250,7 +252,8 @@ public class TST<Value> {
     }
     /**
      * collect method.
-     * Complexity is O(M).
+     * Time complexity is O(L + logN)
+     * L is the length of string and N is the size of tries.
      * Where M is the length of String.
      * @param x Node.
      * @param prefix Stringbuilder.
@@ -272,7 +275,8 @@ public class TST<Value> {
 
 
     /**
-     * Complexity is O(M).
+     * Time complexity is O(L + logN)
+     * L is the length of string and N is the size of tries.
      * Where M is the length of String.
      * Returns all of the keys in the symbol table that match {@code pattern},
      * where . symbol is treated as a wildcard character.
@@ -287,7 +291,8 @@ public class TST<Value> {
     }
     /**
      * Collect method.
-     * Complexity is O(M).
+     * Time complexity is O(L + logN)
+     * L is the length of string and N is the size of tries.
      * Where M is the length of String.
      * @param x Node type
      * @param prefix Stringbuilder.

@@ -9,8 +9,8 @@ final class Solution {
     protected Solution() {
     }
 /**
- *the time complexity is O(M)
- *M is number of words.
+ *Time complexity O(N * W).
+ * where N is noofwords and W is length is word.
  * main method for the Solution class.
  *
  * @param      args  The arguments
