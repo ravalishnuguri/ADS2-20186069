@@ -107,7 +107,7 @@ class EdgeWeightedGraph {
     }
     /**
      *this method returns the vertices count.
-     *
+     *time complexity is O(1)
      * @return  number of vertices.
      */
     public int vertices() {
@@ -115,6 +115,7 @@ class EdgeWeightedGraph {
     }
     /**
      *this method is to build the graph.
+     *time complexity is O(1)
      *
      * @param      edge  The edge
      */
