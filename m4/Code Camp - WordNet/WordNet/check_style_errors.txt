@@ -44,8 +44,9 @@ Audit done.
 Checkstyle ends with 39 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\Digraph.java:52:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\MSIT\ADS2-20186069\m4\Code Camp - WordNet\WordNet\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

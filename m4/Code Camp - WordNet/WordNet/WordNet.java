@@ -90,7 +90,7 @@ g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
      */
     private void isrooteddigraph(final Digraph g2) {
         int count = 0;
-        for (int i = 0; i < g2.vertices(); i++) {
+        for (int i = 0; i < g2.V(); i++) {
             if (g2.outdegree(i) == 0) {
                 count++;
             }
