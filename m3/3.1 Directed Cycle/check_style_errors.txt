@@ -1,8 +1,17 @@
 Starting audit...
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Bag.java:113: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
+Checkstyle ends with 2 errors.
+Starting audit...
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Cycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] E:\MSIT\ADS2-20186069\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.

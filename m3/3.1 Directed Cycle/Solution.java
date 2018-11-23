@@ -103,6 +103,7 @@ class Digraph {
     }
     /**
      * Returns the number of vertices in this digraph.
+     *  time complexity is O(1).
      *
      * @return the number of vertices in this digraph
      */
@@ -112,6 +113,7 @@ class Digraph {
 
     /**
      * Returns the number of edges in this digraph.
+     *time complexity is O(1).
      *
      * @return the number of edges in this digraph
      */
@@ -120,6 +122,7 @@ class Digraph {
     }
     /**
      * method to validate vertex.
+     * time complexity is O(1).
      *
      * @param      v     { parameter_description }
      */
@@ -131,6 +134,7 @@ class Digraph {
 
     /**
      * Adds the directed edge v→w to this digraph.
+     * time complexity is O(1).
      *
      * @param  v the tail vertex
      * @param  w the head vertex
@@ -146,6 +150,7 @@ class Digraph {
 
     /**
      * Returns the vertices adjacent from vertex {@code v} in this digraph.
+     *time complexity is O(N).
      *
      * @param  v the vertex
      * @return the vertices adjacent from vertex.
@@ -159,6 +164,7 @@ class Digraph {
     /**
      * Returns the number of directed edges incident from vertex {@code v}.
      * This is known as the <em>outdegree</em> of vertex {@code v}.
+     *time complexity is O(1).
      *
      * @param  v the vertex
      * @return the outdegree of vertex {@code v}
@@ -172,6 +178,7 @@ class Digraph {
     /**
      * Returns the number of directed edges incident to vertex {@code v}.
      * This is known as the <em>indegree</em> of vertex {@code v}.
+     *time complexity is O(1).
      *
      * @param  v the vertex
      * @return the indegree of vertex {@code v}
@@ -226,6 +233,8 @@ final class Solution {
     private Solution() { }
     /**
      * main method.
+     * time complexity is O(N).
+     * N is the number of inputs.
      *
      * @param      args  The arguments
      */
