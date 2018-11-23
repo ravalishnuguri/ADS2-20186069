@@ -9,6 +9,8 @@ final class Solution {
     private Solution() { }
     /**
      * main method.
+     * Time complexity for this method is O(N).
+     * N is the number of inputs.
      *
      * @param      args  The arguments
      */

@@ -40,50 +40,23 @@ class Graph {
         }
     }
 
-   /**  
-     * Create a digraph from input stream.
-     */
-/*    public Graph(In in) {
-        this(in.readInt());
-        int E = in.readInt();
-        for (int i = 0; i < E; i++) {
-            int v = in.readInt();
-            int w = in.readInt();
-            addEdge(v, w);
-        }
-    }*/
-
-   /**
-     * Copy constructor.
-     */
-/*    public Graph(Graph G) {
-        this(G.V());
-        this.E = G.E();
-        for (int v = 0; v < G.V(); v++) {
-            // reverse so that adjacency list is in same order as original
-            Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : G.adj[v]) {
-                reverse.push(w);
-            }
-            for (int w : reverse) {
-                adj[v].add(w);
-            }
-        }
-    }*/
-
    /**
      * Return the number of vertices in the graph.
+     * Time complexity is O(1).
      */
     public int V() { return V; }
 
    /**
      * Return the number of edges in the graph.
+     * Time complexity is O(1).
+     * 
      */
     public int E() { return E; }
 
 
    /**
      * Add the edge v-w to graph.
+     * Time complexity is O(1).
      */
     public void addEdge(int v, int w) {
         E++;
@@ -94,6 +67,8 @@ class Graph {
 
    /**
      * Return the list of neighbors of vertex v as in Iterable.
+     * Time complexity is O(V).
+     * V is the number of vertices.
      */
     public Iterable<Integer> adj(int v) {
         return adj[v];
@@ -102,6 +77,7 @@ class Graph {
 
    /**
      * Return a string representation of the graph.
+     * Time complexity is O(N^2).
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -145,7 +121,13 @@ class Bipartite {
         }
         assert check(G);
     }
-
+    /**
+     * Time complexity for this method is O(E). 
+     * where E is edges.
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void dfs(Graph G, int v) { 
         marked[v] = true;
         for (int w : G.adj(v)) {
@@ -175,6 +157,7 @@ class Bipartite {
 
     /**
      * Returns true if the graph is bipartite.
+     *  Time complexity for this method is O(1).
      *
      * @return {@code true} if the graph is bipartite; {@code false} otherwise
      */
@@ -183,15 +166,11 @@ class Bipartite {
     }
  
     /**
-     * Returns the side of the bipartite that vertex {@code v} is on.
+     *  Time complexity for this method is O(1).
      *
-     * @param  v the vertex
-     * @return the side of the bipartition that vertex {@code v} is on; two vertices
-     *         are in the same side of the bipartition if and only if they have the
-     *         same color
-     * @throws IllegalArgumentException unless {@code 0 <= v < V} 
-     * @throws UnsupportedOperationException if this method is called when the graph
-     *         is not bipartite
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public boolean color(int v) {
         validateVertex(v);
@@ -207,6 +186,7 @@ class Bipartite {
      * @return an odd-length cycle if the graph is not bipartite
      *         (and hence has an odd-length cycle), and {@code null}
      *         otherwise
+     * Time complexity for this method is O(1).
      */
     public Iterable<Integer> oddCycle() {
         return cycle; 
@@ -242,48 +222,14 @@ class Bipartite {
         return true;
     }
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     *  Time complexity for this method is O(1).
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
-
-    /**
-     * Unit tests the {@code Bipartite} data type.
-     *
-     * @param args the command-line arguments
-     */
-    // public static void main(String[] args) {
-    //     int V1 = Integer.parseInt(args[0]);
-    //     int V2 = Integer.parseInt(args[1]);
-    //     int E  = Integer.parseInt(args[2]);
-    //     int F  = Integer.parseInt(args[3]);
-
-    //     // create random bipartite graph with V1 vertices on left side,
-    //     // V2 vertices on right side, and E edges; then add F random edges
-    //     Graph G = GraphGenerator.bipartite(V1, V2, E);
-    //     for (int i = 0; i < F; i++) {
-    //         int v = StdRandom.uniform(V1 + V2);
-    //         int w = StdRandom.uniform(V1 + V2);
-    //         G.addEdge(v, w);
-    //     }
-    //     System.out.println();
-
-
-    //     Bipartite b = new Bipartite(G);
-    //     if (b.isBipartite()) {
-    //         StdOut.println("Graph is bipartite");
-    //         for (int v = 0; v < G.V(); v++) {
-    //             StdOut.println(v + ": " + b.color(v));
-    //         }
-    //     }
-    //     else {
-    //         StdOut.print("Graph has an odd-length cycle: ");
-    //         for (int x : b.oddCycle()) {
-    //             StdOut.print(x + " ");
-    //         }
-    //         System.out.println();
-    //     }
-    // }
 }
