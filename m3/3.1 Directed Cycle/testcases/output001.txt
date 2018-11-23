@@ -1,1 +1,2 @@
-Cycle doesn't exists.
+distance = 7, ancestor = entity
+distance = 10, ancestor = entity
