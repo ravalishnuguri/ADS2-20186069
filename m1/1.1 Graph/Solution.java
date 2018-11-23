@@ -66,7 +66,7 @@ class Unidrectedgraphforlist {
     /**
      *the method is check whether there is a.
      *connection between two given vertices.
-     *the time complexity is O(1)
+     *the time complexity is O(E)
      * @param      vertexOne  The vertex one
      * @param      vertexTwo  The vertex two
      *
@@ -199,7 +199,7 @@ class Undirectedgraphforbag {
     /**
      *the method is check whether there is a.
      *connection between two given vertices.
-     *the time complexity is O(E)
+     *the time complexity is O(1)
      *E is the number of edges in graph.
      * @param      vertexOne  The vertex one
      * @param      vertexTwo  The vertex two
@@ -250,6 +250,8 @@ final class Solution {
     }
     /**
      *the main to read the input.
+     *Time complexity is O(N)
+     *N is the number of inputs.
      *
      * @param      args  The arguments
      */
