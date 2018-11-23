@@ -38,7 +38,13 @@ public class BreadthFirstDirectedPaths {
         bfs(G, sources);
     }
 
-    // BFS from single source
+    /**
+     * Time complexity for this method is O(V + E).
+     * where V is no of vertices and E is no of edges.
+     *
+     * @param      G     { parameter_description }
+     * @param      s     { parameter_description }
+     */
     private void bfs(Digraph G, int s) {
         Queue<Integer> q = new Queue<Integer>();
         marked[s] = true;
@@ -57,7 +63,13 @@ public class BreadthFirstDirectedPaths {
         }
     }
 
-    // BFS from multiple sources
+    /**
+     * Time complexity for this method is O(V + E)
+     * where V is no of vertices and E is no of edges.
+     *
+     * @param      G        { parameter_description }
+     * @param      sources  The sources
+     */
     private void bfs(Digraph G, Iterable<Integer> sources) {
         Queue<Integer> q = new Queue<Integer>();
         for (int s : sources) {
@@ -83,6 +95,8 @@ public class BreadthFirstDirectedPaths {
      * @param v the vertex
      * @return {@code true} if there is a directed path, {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * 
+     * Time complexity for this method is O(1).
      */
     public boolean hasPathTo(int v) {
         validateVertex(v);
@@ -95,6 +109,7 @@ public class BreadthFirstDirectedPaths {
      * @param v the vertex
      * @return the number of edges in a shortest path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * Time complexity for this method is O(1).
      */
     public int distTo(int v) {
         validateVertex(v);
@@ -107,6 +122,7 @@ public class BreadthFirstDirectedPaths {
      * @param v the vertex
      * @return the sequence of vertices on a shortest path, as an Iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * Time complexity for this method is O(N).
      */
     public Iterable<Integer> pathTo(int v) {
         validateVertex(v);
@@ -120,14 +136,23 @@ public class BreadthFirstDirectedPaths {
         return path;
     }
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * Time complexity for this method is O(1).
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     *  Time complexity for this method is O(V).
+     *  where V is no of vertices.
+     *
+     * @param      vertices  The vertices
+     */
     private void validateVertices(Iterable<Integer> vertices) {
         if (vertices == null) {
             throw new IllegalArgumentException("argument is null");
@@ -139,37 +164,4 @@ public class BreadthFirstDirectedPaths {
             }
         }
     }
-
-
-    /**
-     * Unit tests the {@code BreadthFirstDirectedPaths} data type.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args) {
-        // In in = new In(args[0]);
-        // Digraph G = new Digraph(in);
-        // // StdOut.println(G);
-
-        // int s = Integer.parseInt(args[1]);
-        // BreadthFirstDirectedPaths bfs = new BreadthFirstDirectedPaths(G, s);
-
-        // for (int v = 0; v < G.V(); v++) {
-        //     if (bfs.hasPathTo(v)) {
-        //         StdOut.printf("%d to %d (%d):  ", s, v, bfs.distTo(v));
-        //         for (int x : bfs.pathTo(v)) {
-        //             if (x == s) StdOut.print(x);
-        //             else        StdOut.print("->" + x);
-        //         }
-        //         StdOut.println();
-        //     }
-
-        //     else {
-        //         StdOut.printf("%d to %d (-):  not connected\n", s, v);
-        //     }
-
-        // }
-    }
-
-
 }
