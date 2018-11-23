@@ -3,15 +3,19 @@ import java.util.Scanner;
 Solution the class
 */
 final class Solution {
-/**.
-@Solution() the constructor
-*/
+/**
+ * Constructs the object.
+ */
     private Solution() {
     }
-/**.
-@param args the command line arguments
-*/
-    public static void main(final String[] args) {
+/**
+ * Main method for Solution.
+ * Time compleity is O(N)
+ * N is the number of inputs
+ *
+ * @param      args  The arguments
+ */
+public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = Integer.parseInt(s.nextLine());
         Percolation p = new Percolation(n);

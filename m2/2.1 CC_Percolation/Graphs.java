@@ -63,6 +63,8 @@ public class Graphs implements Graph {
 
     }
     /**
+     *time complexity is O(N)
+     * N is the vertices.
      * @param v value
      * @return value
      */

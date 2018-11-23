@@ -33,6 +33,10 @@ class Percolation {
         return (i*size) + j;
     }
     /**
+     * the method is to check whether the.
+     * the grid percolates or not.
+     * time complexity is O(N^2)
+     * N is the vertices
      * @param r value
      * @param c value
      */

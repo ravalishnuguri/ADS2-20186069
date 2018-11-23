@@ -21,7 +21,15 @@ public class CC {
         }
     }
 
-    // depth-first search for a Graph
+    /**
+     * the method is to perform the depth.
+     * first search.
+     * time complexity is O(E)
+     * E is the edges.
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void dfs(Graphs G, int v) {
         marked[v] = true;
         id[v] = count;
@@ -33,26 +41,58 @@ public class CC {
         }
     }
 
-
+    /**
+     * { function_description }.
+     * time complexity is O(1).
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int id(int v) {
 
         return id[v];
     }
-
+    /**
+     * time complexity is O(1).
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size(int v) {
 
         return size[id[v]];
     }
 
-
+    /**
+     * time complexity is O(1).
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int count() {
         return count;
     }
-
+    /**
+     * time complexity is O(E).
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean connected(int v, int w) {
 
         return id(v) == id(w);
     }
+    /**
+     * time complexity is O(E).
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean areConnected(int v, int w) {
         return id(v) == id(w);
     }
