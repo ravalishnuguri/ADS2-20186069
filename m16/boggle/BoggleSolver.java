@@ -7,19 +7,19 @@ public class BoggleSolver {
 /**.
 dict the trie dictionary
 */
-    private Trie<Integer> dict;
+private Trie<Integer> dict;
 /**.
 board the boggleboard object
 */
-    private BoggleBoard board;
+private BoggleBoard board;
 /**.
 map the hashmap for storng the key
 */
-    private HashMap<String, Integer> map;
+private HashMap<String, Integer> map;
 /**.
 list for storing the final list of keys
 */
-    private ArrayList<String> list;
+private ArrayList<String> list;
     /**
      * magic number.
      */
@@ -49,7 +49,7 @@ list for storing the final list of keys
  * Complexity is O(l) l is length of dictionary.
  * @param      dictionary  The dictionary
  */
-    public BoggleSolver(final String[] dictionary) {
+public BoggleSolver(final String[] dictionary) {
         dict = new Trie<>();
         for (int i = 0; i < dictionary.length; i++) {
             dict.put(dictionary[i], getScore(dictionary[i]));

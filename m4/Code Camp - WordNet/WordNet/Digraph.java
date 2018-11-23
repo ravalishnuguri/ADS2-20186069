@@ -49,7 +49,7 @@ public class Digraph {
      * @return the number of vertices in this digraph
      * Time complexity is O(1).
      */
-    public int V() {
+    public int vertices() {
         return vertices;
     }
     /**
@@ -117,7 +117,7 @@ public class Digraph {
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(vertices + " vertices, " + edges + " edges " + NEWLINE);
-        for (int v = 0; v < V(); v++) {
+        for (int v = 0; v < vertices(); v++) {
             s.append(String.format("%d: ", v));
             for (int w : adj[v]) {
                 s.append(String.format("%d ", w));

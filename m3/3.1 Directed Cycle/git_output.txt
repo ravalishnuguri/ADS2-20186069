@@ -1,0 +1,220 @@
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Stack.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input000.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input001.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input002.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input003.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input004.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input005.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input006.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input007.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output000.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output001.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output002.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output003.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output004.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output005.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output006.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output007.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms100-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms1000-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms10000-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms100K.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms11AmbiguousAncestor.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms11ManyPathsOneAncestor.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms15Path.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms15Tree.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms200K.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms300K.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms3InvalidCycle.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms3InvalidTwoRoots.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms500-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms5000-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms50000-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms6InvalidCycle+Path.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms6InvalidCycle.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms6InvalidTwoRoots.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms6TwoAncestors.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms8ManyAncestors.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernyms8WrongBFS.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/hypernymsManyPathsOneAncestor.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets100-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets1000-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets10000-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets11.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets15.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets3.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets500-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets5000-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets50000-subgraph.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets6.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/Files/synsets8.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input008.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input009.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input010.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input011.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input012.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input013.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/input014.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output008.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output009.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output010.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output011.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output012.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output013.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in m3/3.1 Directed Cycle/testcases/output014.txt.
+The file will have its original line endings in your working directory.
+[master e0109ee] "ads2_m4_a1_1: 15/15 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 125 files changed, 545510 insertions(+), 603 deletions(-)
+ rewrite m3/3.1 Directed Cycle/Bag$ListIterator.class (81%)
+ rewrite m3/3.1 Directed Cycle/Bag.class (67%)
+ create mode 100644 m3/3.1 Directed Cycle/BreadthFirstDirectedPaths.class
+ create mode 100644 m3/3.1 Directed Cycle/BreadthFirstDirectedPaths.java
+ rewrite m3/3.1 Directed Cycle/Digraph.class (98%)
+ create mode 100644 m3/3.1 Directed Cycle/Digraph.java
+ rewrite m3/3.1 Directed Cycle/Directedcycle.class (93%)
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms100-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms1000-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms10000-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms100K.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms11AmbiguousAncestor.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms11ManyPathsOneAncestor.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms15Path.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms15Tree.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms200K.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms300K.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms3InvalidCycle.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms3InvalidTwoRoots.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms500-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms5000-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms50000-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms6InvalidCycle+Path.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms6InvalidCycle.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms6InvalidTwoRoots.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms6TwoAncestors.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms8ManyAncestors.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernyms8WrongBFS.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/hypernymsManyPathsOneAncestor.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets100-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets1000-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets10000-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets11.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets15.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets3.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets500-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets5000-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets50000-subgraph.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets6.txt
+ create mode 100644 m3/3.1 Directed Cycle/Files/synsets8.txt
+ create mode 100644 m3/3.1 Directed Cycle/Queue$1.class
+ create mode 100644 m3/3.1 Directed Cycle/Queue$ListIterator.class
+ create mode 100644 m3/3.1 Directed Cycle/Queue$Node.class
+ create mode 100644 m3/3.1 Directed Cycle/Queue.class
+ create mode 100644 m3/3.1 Directed Cycle/Queue.java
+ create mode 100644 m3/3.1 Directed Cycle/SAP.class
+ create mode 100644 m3/3.1 Directed Cycle/SAP.java
+ rewrite m3/3.1 Directed Cycle/Solution.class (100%)
+ rewrite m3/3.1 Directed Cycle/Solution.java (94%)
+ rewrite m3/3.1 Directed Cycle/Stack$ListIterator.class (80%)
+ rewrite m3/3.1 Directed Cycle/Stack.class (82%)
+ create mode 100644 m3/3.1 Directed Cycle/WordNet.pdf
+ create mode 100644 m3/3.1 Directed Cycle/md5/input008.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/input009.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/input010.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/input011.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/input012.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/input013.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/input014.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/output008.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/output009.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/output010.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/output011.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/output012.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/output013.txt
+ create mode 100644 m3/3.1 Directed Cycle/md5/output014.txt
+ rewrite m3/3.1 Directed Cycle/result/score.json (90%)
+ create mode 100644 m3/3.1 Directed Cycle/testcases/input008.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/input009.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/input010.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/input011.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/input012.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/input013.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/input014.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/output008.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/output009.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/output010.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/output011.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/output012.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/output013.txt
+ create mode 100644 m3/3.1 Directed Cycle/testcases/output014.txt
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/ravalishnuguri/ADS2-20186069.git
+   33cffa0..e0109ee  master -> master
