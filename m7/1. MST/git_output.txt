@@ -1,0 +1,5 @@
+[master 64c612e] "ads2_m7_a1_1: 6/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 2 insertions(+), 7 deletions(-)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/ravalishnuguri/ADS2-20186069.git
+   42d4a87..64c612e  master -> master
